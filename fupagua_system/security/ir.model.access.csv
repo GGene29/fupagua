@@ -1,3 +1,4 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_area_specialization,area_specialization,model_area_specialization,base.group_system,1,1,1,1
 access_specialist_user,specialist_user,model_specialist_user,base.group_system,1,1,1,1
+access_patient,patient,model_patient,base.group_system,1,1,1,1

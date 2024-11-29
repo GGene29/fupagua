@@ -22,8 +22,10 @@
             <field name="arch" type="xml">
                 <form>
                     <sheet>
-                        <field name="stage_area" />
-                        <field name="area_name"/>
+                        <group>
+                            <field name="stage_area" />
+                            <field name="area_name"/>
+                        </group>
                     </sheet>
                 </form>
             </field>

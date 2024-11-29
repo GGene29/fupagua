@@ -14,6 +14,7 @@
         "security/ir.model.access.csv",
         "views/area_specialization_view.xml",
         "views/specialist_user_view.xml",
+        "views/patient_view.xml",
     ],
     'installable': True,
     
