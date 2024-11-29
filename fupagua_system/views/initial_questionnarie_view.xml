@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <data>
+
+    <!-- View Tree -->
+        <record model="ir.ui.view" id="initial_questionnarie_view">
+            <field name="name">initial_questionnarie</field>    
+            <field name="model">initial_questionnarie</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="names"/>
+                </tree>
+            </field>
+        </record>
+
+    <!-- View Form -->
+        <!-- <record model="ir.ui.view" id="initial_questionnarie_form">
+            <field name="name">initial_questionnarie</field>    
+            <field name="model">initial_questionnarie</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field names="names"/>                   
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record> -->
+        
+    <!-- Action Server View -->
+        <record model="ir.actions.server" id="initial_questionnarie_action_server">
+            <field name="name">initial_questionnarie_server</field>
+            <field name="model_id" ref="model_initial_questionnarie"/>
+            <field name="state">code</field>
+            <field name="code">
+              action = {
+                "type": "ir.actions.act_window",
+                "view_mode": "tree,form",
+                "res_model": model._name,
+              }
+            </field>
+        </record>
+
+    <!-- Menu -->
+        <menuitem name="Initial Questionnarie" id="initial_questionnarie_menu_item" sequence="90" action="initial_questionnarie_action_server"/>
+
+    </data>
+</odoo>
