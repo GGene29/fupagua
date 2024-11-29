@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <data>
+    
+        <!-- View Tree  -->
+        <record model="ir.ui.view" id="specialist_user_view_tree">
+            <field name="name">specialist_user</field>
+            <field name="model">specialist_user</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="description_specialist"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- View Form -->
+
+        <record model="ir.ui.view" id="specialist_user_view_form">
+            <field name="name">specialist_user</field>
+            <field name="model">specialist_user</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="description_specialist"/>
+                        </group>
+                    </sheet>
+                </form>
+            
+            </field>
+        
+        </record>
+
+        <!-- Action Server View -->
+        <record model="ir.actions.server" id="specialist_user_action_server">
+            <field name="name">specialist_user_server</field>
+            <field name="model_id" ref="model_specialist_user"/>
+            <field name="state">code</field>
+            <field name="code">
+              action = {
+                "type": "ir.actions.act_window",
+                "view_mode": "tree,form",
+                "res_model": model._name,
+              }
+            </field>
+        </record>
+
+    <!-- Menu -->
+        <menuitem name="Specialist User" id="specialist_user_menu_item" sequence="70" action="specialist_user_action_server"/>
+
+    </data>
+</odoo>

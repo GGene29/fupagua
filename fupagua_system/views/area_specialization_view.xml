@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <data>
+
+    <!-- View Tree -->
+        <record model="ir.ui.view" id="area_specialization_view">
+            <field name="name">area_specialization</field>    
+            <field name="model">area_specialization</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="stage_area" />
+                    <field name="area_name"/>
+                </tree>
+            </field>
+        </record>
+
+    <!-- View Form -->
+        <record model="ir.ui.view" id="area_specialization_form">
+            <field name="name">area_specialization</field>    
+            <field name="model">area_specialization</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <field name="stage_area" />
+                        <field name="area_name"/>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        
+    <!-- Action Server View -->
+        <record model="ir.actions.server" id="area_specialization_action_server">
+            <field name="name">area_specialization_server</field>
+            <field name="model_id" ref="model_area_specialization"/>
+            <field name="state">code</field>
+            <field name="code">
+              action = {
+                "type": "ir.actions.act_window",
+                "view_mode": "tree,form",
+                "res_model": model._name,
+              }
+            </field>
+        </record>
+
+    <!-- Menu -->
+        <menuitem name="Area of Specialization" id="area_specialization_menu_item" sequence="60" action="area_specialization_action_server"/>
+
+    </data>
+</odoo>
