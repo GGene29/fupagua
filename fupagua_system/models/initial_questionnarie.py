@@ -26,14 +26,13 @@ class Questionnarie(models.Model):
     
     # schooling = fields.Select()
     
-    # institution = fields.Char(string='Institution')
+    institution = fields.Char(string='Institution')
     
-    # address = fields.Char(string='Address')
+    address = fields.Char(string='Address')
     
-    # phone = fields.Char(string="Phone")
+    phone = fields.Char(string="Phone")
     
-    # provider_by = fields.Char(string='Data Provider By')
+    provider_by = fields.Char(string='Data Provider By')
     
-    # relationship = fields.Char(string='Kinship relationship with the evaluated')
-    
+    relationship = fields.Char(string='Kinship relationship with the evaluated')
     

@@ -9,25 +9,40 @@
             <field name="model">initial_questionnarie</field>
             <field name="arch" type="xml">
                 <tree>
+                    <field name="registration_code"/>
                     <field name="names"/>
+                    <field name="lastname"/>
+                
                 </tree>
             </field>
         </record>
 
     <!-- View Form -->
-        <!-- <record model="ir.ui.view" id="initial_questionnarie_form">
+        <record model="ir.ui.view" id="initial_questionnarie_form">
             <field name="name">initial_questionnarie</field>    
             <field name="model">initial_questionnarie</field>
             <field name="arch" type="xml">
                 <form>
                     <sheet>
                         <group>
-                            <field names="names"/>                   
+                            <field name="registration_code"/>
+                            <field name="registration_date"/>
+                            <field name="names"/>
+                            <field name="lastname"/>
+                            <field name="identification"/>
+                            <field name="date_of_birth"/>
+                            <field name="place_of_birth"/>
+                            <field name="age"/>
+                            <field name="institution"/>
+                            <field name="address"/>
+                            <field name="phone"/>
+                            <field name="provider_by"/>
+                            <field name="relationship"/>
                         </group>
                     </sheet>
                 </form>
             </field>
-        </record> -->
+        </record>
         
     <!-- Action Server View -->
         <record model="ir.actions.server" id="initial_questionnarie_action_server">
