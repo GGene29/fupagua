@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0-20241029\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-26 21:20+0000\n"
-"PO-Revision-Date: 2024-12-26 21:20+0000\n"
+"POT-Creation-Date: 2024-12-26 22:07+0000\n"
+"PO-Revision-Date: 2024-12-26 22:07+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -37,15 +37,16 @@ msgid "Age"
 msgstr ""
 
 #. module: fupagua_system
-#: model:ir.model.fields,field_description:fupagua_system.field_specialist_user__area_specialization_id
+#: model:ir.model.fields,field_description:fupagua_system.field_res_partner__area_specialization_id
+#: model:ir.model.fields,field_description:fupagua_system.field_res_users__area_specialization_id
 msgid "Area de Specialización"
-msgstr ""
+msgstr "Area de Especialización"
 
 #. module: fupagua_system
 #: model:ir.model.fields,field_description:fupagua_system.field_area_specialization__area_name
 #: model:ir.ui.menu,name:fupagua_system.area_specialization_menu_item
 msgid "Area of Specialization"
-msgstr ""
+msgstr "Area de Especialización"
 
 #. module: fupagua_system
 #: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__identification
@@ -58,11 +59,15 @@ msgid "Code"
 msgstr ""
 
 #. module: fupagua_system
+#: model:ir.model,name:fupagua_system.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: fupagua_system
 #: model:ir.model.fields,field_description:fupagua_system.field_area_specialization__create_uid
 #: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__create_uid
 #: model:ir.model.fields,field_description:fupagua_system.field_patient__create_uid
 #: model:ir.model.fields,field_description:fupagua_system.field_sessions_fupagua__create_uid
-#: model:ir.model.fields,field_description:fupagua_system.field_specialist_user__create_uid
 msgid "Created by"
 msgstr ""
 
@@ -71,7 +76,6 @@ msgstr ""
 #: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__create_date
 #: model:ir.model.fields,field_description:fupagua_system.field_patient__create_date
 #: model:ir.model.fields,field_description:fupagua_system.field_sessions_fupagua__create_date
-#: model:ir.model.fields,field_description:fupagua_system.field_specialist_user__create_date
 msgid "Created on"
 msgstr ""
 
@@ -102,7 +106,13 @@ msgid "Date Registrion"
 msgstr ""
 
 #. module: fupagua_system
-#: model:ir.model.fields,field_description:fupagua_system.field_specialist_user__description_specialist
+#: model_terms:ir.ui.view,arch_db:fupagua_system.view_partner_form_custom
+msgid "Description"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_res_partner__description_specialist
+#: model:ir.model.fields,field_description:fupagua_system.field_res_users__description_specialist
 msgid "Description Specialist"
 msgstr ""
 
@@ -126,7 +136,6 @@ msgstr ""
 #: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__display_name
 #: model:ir.model.fields,field_description:fupagua_system.field_patient__display_name
 #: model:ir.model.fields,field_description:fupagua_system.field_sessions_fupagua__display_name
-#: model:ir.model.fields,field_description:fupagua_system.field_specialist_user__display_name
 msgid "Display Name"
 msgstr ""
 
@@ -140,7 +149,6 @@ msgstr ""
 #: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__id
 #: model:ir.model.fields,field_description:fupagua_system.field_patient__id
 #: model:ir.model.fields,field_description:fupagua_system.field_sessions_fupagua__id
-#: model:ir.model.fields,field_description:fupagua_system.field_specialist_user__id
 msgid "ID"
 msgstr ""
 
@@ -165,7 +173,6 @@ msgstr ""
 #: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie____last_update
 #: model:ir.model.fields,field_description:fupagua_system.field_patient____last_update
 #: model:ir.model.fields,field_description:fupagua_system.field_sessions_fupagua____last_update
-#: model:ir.model.fields,field_description:fupagua_system.field_specialist_user____last_update
 msgid "Last Modified on"
 msgstr ""
 
@@ -174,7 +181,6 @@ msgstr ""
 #: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__write_uid
 #: model:ir.model.fields,field_description:fupagua_system.field_patient__write_uid
 #: model:ir.model.fields,field_description:fupagua_system.field_sessions_fupagua__write_uid
-#: model:ir.model.fields,field_description:fupagua_system.field_specialist_user__write_uid
 msgid "Last Updated by"
 msgstr ""
 
@@ -183,7 +189,6 @@ msgstr ""
 #: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__write_date
 #: model:ir.model.fields,field_description:fupagua_system.field_patient__write_date
 #: model:ir.model.fields,field_description:fupagua_system.field_sessions_fupagua__write_date
-#: model:ir.model.fields,field_description:fupagua_system.field_specialist_user__write_date
 msgid "Last Updated on"
 msgstr ""
 
@@ -240,11 +245,6 @@ msgid "Mother age"
 msgstr ""
 
 #. module: fupagua_system
-#: model:ir.model.fields,field_description:fupagua_system.field_specialist_user__name
-msgid "Name"
-msgstr ""
-
-#. module: fupagua_system
 #: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__names
 #: model:ir.model.fields,field_description:fupagua_system.field_patient__name
 msgid "Names"
@@ -280,13 +280,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__mother_phone
 #: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__phone
 #: model:ir.model.fields,field_description:fupagua_system.field_patient__phone
-#: model:ir.model.fields,field_description:fupagua_system.field_specialist_user__phone
 msgid "Phone"
-msgstr ""
-
-#. module: fupagua_system
-#: model:ir.model.fields,field_description:fupagua_system.field_specialist_user__photo
-msgid "Photo"
 msgstr ""
 
 #. module: fupagua_system
@@ -318,14 +312,14 @@ msgid "Sessions"
 msgstr "Sesiones"
 
 #. module: fupagua_system
-#: model:ir.ui.menu,name:fupagua_system.specialist_user_menu_item
-msgid "Specialist User"
-msgstr "Especialista"
+#: model_terms:ir.ui.view,arch_db:fupagua_system.view_partner_form_custom
+msgid "Specialization"
+msgstr "Especialización"
 
 #. module: fupagua_system
 #: model:ir.model.fields,field_description:fupagua_system.field_area_specialization__stage_area
 msgid "Stage"
-msgstr ""
+msgstr "Etapa"
 
 #. module: fupagua_system
 #: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__father_support
@@ -339,11 +333,6 @@ msgid "Treatment and evoluction"
 msgstr ""
 
 #. module: fupagua_system
-#: model:ir.model,name:fupagua_system.model_specialist_user
-msgid "Usuarios especialistas"
-msgstr ""
-
-#. module: fupagua_system
 #: model:ir.model.fields.selection,name:fupagua_system.selection__initial_questionnarie__nationality__1
 msgid "Venezolano"
 msgstr ""
@@ -351,11 +340,6 @@ msgstr ""
 #. module: fupagua_system
 #: model:ir.actions.server,name:fupagua_system.area_specialization_action_server
 msgid "area_specialization_server"
-msgstr ""
-
-#. module: fupagua_system
-#: model:ir.model.fields,field_description:fupagua_system.field_specialist_user__email
-msgid "email"
 msgstr ""
 
 #. module: fupagua_system
@@ -437,8 +421,3 @@ msgstr ""
 #: model:ir.model.fields,field_description:fupagua_system.field_sessions_fupagua__specialist_id
 msgid "specialist"
 msgstr "Especialista"
-
-#. module: fupagua_system
-#: model:ir.actions.server,name:fupagua_system.specialist_user_action_server
-msgid "specialist_user_server"
-msgstr ""

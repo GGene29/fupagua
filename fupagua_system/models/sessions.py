@@ -16,7 +16,7 @@ class Sessions(models.Model):
     )
 
     specialist_id = fields.Many2one(
-        'specialist_user',
+        'res.users',
         string='specialist',
     )
 
