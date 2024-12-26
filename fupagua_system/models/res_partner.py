@@ -1,4 +1,4 @@
-from odoo import models ,fields
+from odoo import models,fields
 
 class ResPartner(models.Model):
     # Heredamos el modelo partner
@@ -11,3 +11,5 @@ class ResPartner(models.Model):
         'area_specialization' , 
         'Area de Specialización'
     )
+
+    service_ids = fields.Many2many('services', string="Services")

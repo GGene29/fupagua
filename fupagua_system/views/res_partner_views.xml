@@ -10,6 +10,7 @@
                 <!-- Añadir los nuevos campos al formulario -->
                 <xpath expr="//field[@name='vat']" position="after">
                     <field name="area_specialization_id" string="Specialization" options="{'no_open': True, 'no_create': True, 'no_quick_create': True, 'no_create_edit':True}"/>
+                    <field name="service_ids" domain="[('specialization_id','=',area_specialization_id)]"/>
                     <field name="description_specialist" string="Description"/>
                 </xpath>
             </field>
