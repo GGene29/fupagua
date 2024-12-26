@@ -5,7 +5,7 @@
 
     <!-- View Tree -->
         <record model="ir.ui.view" id="initial_questionnarie_view">
-            <field name="name">initial_questionnarie</field>    
+            <field name="name">initial questionnarie</field>    
             <field name="model">initial_questionnarie</field>
             <field name="arch" type="xml">
                 <tree>
@@ -19,26 +19,80 @@
 
     <!-- View Form -->
         <record model="ir.ui.view" id="initial_questionnarie_form">
-            <field name="name">initial_questionnarie</field>    
+            <field name="name">Initial Questionnarie</field>    
             <field name="model">initial_questionnarie</field>
             <field name="arch" type="xml">
                 <form>
                     <sheet>
                         <group>
-                            <field name="registration_code"/>
-                            <field name="registration_date"/>
-                            <field name="names"/>
-                            <field name="lastname"/>
-                            <field name="identification"/>
-                            <field name="date_of_birth"/>
-                            <field name="place_of_birth"/>
-                            <field name="age"/>
-                            <field name="institution"/>
-                            <field name="address"/>
-                            <field name="phone"/>
-                            <field name="provider_by"/>
-                            <field name="relationship"/>
+                            <group col="1"> 
+                                <field name="registration_code"/>
+                                <field name="registration_date"/>
+                                <field name="names"/>
+                                <field name="lastname"/>
+                                <field name="age"/>
+                                <field name="identification"/>
+                                <field name="nationality"/>
+                                <field name="address"/>
+                            </group>
+                            <group col="2">
+                                <field name="date_of_birth"/>
+                                <field name="place_of_birth"/>
+                                <field name="institution"/>
+                                <field name="phone"/>
+                                <field name="provider_by"/>
+                                <field name="relationship"/>
+                            </group>
                         </group>
+                        <notebook>
+                            <page string="Part Two">
+                                <group>
+                                    <field name="evaluation_reason"/>
+                                    <field name="age_difference"/>
+                                    <field name="difference_description"/>
+                                    <field name="diagnosis_examination"/>
+                                    <field name="treatment_evolution"/>
+                                </group>
+                            </page>
+
+                            <page string="Part Three">
+                                <group>
+                                    <group col="1">
+                                        <field name="mother_name" />
+                                        <field name="mother_age" />
+                                        <field name="mother_nationality" />
+                                        <field name="mother_nif" />
+                                        <field name="mother_educational" />
+                                        <field name="mother_occupation" />
+                                        <field name="mother_work" />
+                                        <field name="mother_salary" />
+                                        <field name="mother_support" />
+                                        <field name="mother_status" />
+                                        <field name="mother_phone" />
+                                        <field name="mother_address" />
+                                        <field name="mother_relationship" />
+                                        <field name="opinion_behavior_mother" />
+                                    </group>
+                                    <group col="2">
+                                        <field name="father_name" />
+                                        <field name="father_age" />
+                                        <field name="father_nationality" />
+                                        <field name="father_nif" />
+                                        <field name="father_educational" />
+                                        <field name="father_occupation" />
+                                        <field name="father_work" />
+                                        <field name="father_salary" />
+                                        <field name="father_support" />
+                                        <field name="father_status" />
+                                        <field name="father_phone" />
+                                        <field name="father_address" />
+                                        <field name="father_relationship" />
+                                        <field name="opinion_behavior_father" />
+                                    </group>
+                                    
+                                </group>
+                            </page>
+                        </notebook>
                     </sheet>
                 </form>
             </field>
