@@ -3,3 +3,4 @@ access_area_specialization,area_specialization,model_area_specialization,base.gr
 access_specialist_user,specialist_user,model_specialist_user,base.group_system,1,1,1,1
 access_patient,patient,model_patient,base.group_system,1,1,1,1
 access_initial_questionnarie,initial_questionnarie,model_initial_questionnarie,base.group_system,1,1,1,1
+access_sessions_fupagua,sessions_fupagua,model_sessions_fupagua,base.group_system,1,1,1,1

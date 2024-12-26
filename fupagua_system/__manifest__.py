@@ -16,6 +16,7 @@
         "views/specialist_user_view.xml",
         "views/patient_view.xml",
         "views/initial_questionnarie_view.xml",
+        "views/sessions_views.xml",
     ],
     'installable': True,
     

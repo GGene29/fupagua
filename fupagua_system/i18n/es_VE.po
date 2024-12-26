@@ -1,0 +1,444 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* fupagua_system
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0-20241029\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-26 21:20+0000\n"
+"PO-Revision-Date: 2024-12-26 21:20+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__mother_address
+msgid "Addres Mother"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__father_address
+msgid "Addres father"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__address
+msgid "Address"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__age
+#: model:ir.model.fields,field_description:fupagua_system.field_patient__age
+msgid "Age"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_specialist_user__area_specialization_id
+msgid "Area de Specialización"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_area_specialization__area_name
+#: model:ir.ui.menu,name:fupagua_system.area_specialization_menu_item
+msgid "Area of Specialization"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__identification
+msgid "CI"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__registration_code
+msgid "Code"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_area_specialization__create_uid
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__create_uid
+#: model:ir.model.fields,field_description:fupagua_system.field_patient__create_uid
+#: model:ir.model.fields,field_description:fupagua_system.field_sessions_fupagua__create_uid
+#: model:ir.model.fields,field_description:fupagua_system.field_specialist_user__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_area_specialization__create_date
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__create_date
+#: model:ir.model.fields,field_description:fupagua_system.field_patient__create_date
+#: model:ir.model.fields,field_description:fupagua_system.field_sessions_fupagua__create_date
+#: model:ir.model.fields,field_description:fupagua_system.field_specialist_user__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model,name:fupagua_system.model_initial_questionnarie
+msgid "Cuestionario Inicial es lo mazimo para poder compartir "
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__provider_by
+msgid "Data Provider By"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__registration_date
+msgid "Date"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__date_of_birth
+#: model:ir.model.fields,field_description:fupagua_system.field_patient__date_of_birth
+msgid "Date Birthday"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_patient__create_patient
+msgid "Date Registrion"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_specialist_user__description_specialist
+msgid "Description Specialist"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__diagnosis_examination
+msgid "Diagnosis or Examination"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__age_difference
+msgid "Difference Age"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__difference_description
+msgid "Difference Text"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_area_specialization__display_name
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__display_name
+#: model:ir.model.fields,field_description:fupagua_system.field_patient__display_name
+#: model:ir.model.fields,field_description:fupagua_system.field_sessions_fupagua__display_name
+#: model:ir.model.fields,field_description:fupagua_system.field_specialist_user__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields.selection,name:fupagua_system.selection__initial_questionnarie__nationality__2
+msgid "Extranjero"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_area_specialization__id
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__id
+#: model:ir.model.fields,field_description:fupagua_system.field_patient__id
+#: model:ir.model.fields,field_description:fupagua_system.field_sessions_fupagua__id
+#: model:ir.model.fields,field_description:fupagua_system.field_specialist_user__id
+msgid "ID"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_sessions_fupagua__initial_questionnarie_id
+#: model:ir.ui.menu,name:fupagua_system.initial_questionnarie_menu_item
+msgid "Initial Questionnarie"
+msgstr "Cuestionario Inicial"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__institution
+msgid "Institution"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__relationship
+msgid "Kinship relationship with the evaluated"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_area_specialization____last_update
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie____last_update
+#: model:ir.model.fields,field_description:fupagua_system.field_patient____last_update
+#: model:ir.model.fields,field_description:fupagua_system.field_sessions_fupagua____last_update
+#: model:ir.model.fields,field_description:fupagua_system.field_specialist_user____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_area_specialization__write_uid
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__write_uid
+#: model:ir.model.fields,field_description:fupagua_system.field_patient__write_uid
+#: model:ir.model.fields,field_description:fupagua_system.field_sessions_fupagua__write_uid
+#: model:ir.model.fields,field_description:fupagua_system.field_specialist_user__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_area_specialization__write_date
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__write_date
+#: model:ir.model.fields,field_description:fupagua_system.field_patient__write_date
+#: model:ir.model.fields,field_description:fupagua_system.field_sessions_fupagua__write_date
+#: model:ir.model.fields,field_description:fupagua_system.field_specialist_user__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__lastname
+#: model:ir.model.fields,field_description:fupagua_system.field_patient__lastname
+msgid "Lastname"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__father_status
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__mother_status
+msgid "Marital Status"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__mother_educational
+msgid "Mother Educational Level"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__mother_nif
+msgid "Mother NIF"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__mother_name
+msgid "Mother Name"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__mother_nationality
+msgid "Mother Nationality"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__mother_occupation
+msgid "Mother Occupation"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__mother_salary
+msgid "Mother Salary"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__mother_work
+msgid "Mother Work Schedule"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__mother_age
+msgid "Mother age"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_specialist_user__name
+msgid "Name"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__names
+#: model:ir.model.fields,field_description:fupagua_system.field_patient__name
+msgid "Names"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__nationality
+msgid "Nationality"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model,name:fupagua_system.model_area_specialization
+msgid "Para cargar las areas de especialización"
+msgstr ""
+
+#. module: fupagua_system
+#: model_terms:ir.ui.view,arch_db:fupagua_system.initial_questionnarie_form
+msgid "Part Three"
+msgstr ""
+
+#. module: fupagua_system
+#: model_terms:ir.ui.view,arch_db:fupagua_system.initial_questionnarie_form
+msgid "Part Two"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.ui.menu,name:fupagua_system.patient_menu_item
+msgid "Patient"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__father_phone
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__mother_phone
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__phone
+#: model:ir.model.fields,field_description:fupagua_system.field_patient__phone
+#: model:ir.model.fields,field_description:fupagua_system.field_specialist_user__phone
+msgid "Phone"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_specialist_user__photo
+msgid "Photo"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__place_of_birth
+msgid "Plance of birthday"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__father_relationship
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__mother_relationship
+msgid "Relationship"
+msgstr ""
+
+#. module: fupagua_system
+#: model_terms:ir.ui.view,arch_db:fupagua_system.sessions_fupagua_view_form
+msgid "Session"
+msgstr "Sesión"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_sessions_fupagua__date
+msgid "Session Date"
+msgstr "Fecha de Sesión"
+
+#. module: fupagua_system
+#: model:ir.actions.act_window,name:fupagua_system.sessions_fupagua_view_action
+#: model:ir.ui.menu,name:fupagua_system.sessions_fupagua_view_menu
+#: model_terms:ir.ui.view,arch_db:fupagua_system.sessions_fupagua_view_tree
+msgid "Sessions"
+msgstr "Sesiones"
+
+#. module: fupagua_system
+#: model:ir.ui.menu,name:fupagua_system.specialist_user_menu_item
+msgid "Specialist User"
+msgstr "Especialista"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_area_specialization__stage_area
+msgid "Stage"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__father_support
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__mother_support
+msgid "Support"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__treatment_evolution
+msgid "Treatment and evoluction"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model,name:fupagua_system.model_specialist_user
+msgid "Usuarios especialistas"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields.selection,name:fupagua_system.selection__initial_questionnarie__nationality__1
+msgid "Venezolano"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.actions.server,name:fupagua_system.area_specialization_action_server
+msgid "area_specialization_server"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_specialist_user__email
+msgid "email"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__evaluation_reason
+msgid "evaluation_reason"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__father_educational
+msgid "father Educational Level"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__father_nif
+msgid "father NIF"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__father_name
+msgid "father Name"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__father_nationality
+msgid "father Nationality"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__father_occupation
+msgid "father Occupation"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__father_salary
+msgid "father Salary"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__father_work
+msgid "father Work Schedule"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__father_age
+msgid "father age"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.actions.server,name:fupagua_system.initial_questionnarie_action_server
+msgid "initial_questionnarie_server"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model,name:fupagua_system.model_sessions_fupagua
+msgid "model to save session information"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__opinion_behavior_father
+msgid "opinion_behavior_father"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__opinion_behavior_mother
+msgid "opinion_behavior_mother"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.actions.server,name:fupagua_system.patient_action_server
+msgid "patient_server"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model,name:fupagua_system.model_patient
+msgid "registro de pacientes"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_sessions_fupagua__specialist_id
+msgid "specialist"
+msgstr "Especialista"
+
+#. module: fupagua_system
+#: model:ir.actions.server,name:fupagua_system.specialist_user_action_server
+msgid "specialist_user_server"
+msgstr ""
