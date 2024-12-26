@@ -33,7 +33,7 @@
         
     <!-- Action Server View -->
         <record model="ir.actions.server" id="area_specialization_action_server">
-            <field name="name">area_specialization_server</field>
+            <field name="name">Area of Specializations</field>
             <field name="model_id" ref="model_area_specialization"/>
             <field name="state">code</field>
             <field name="code">

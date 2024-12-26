@@ -11,11 +11,17 @@
     'depends' : ['base', 'contacts', 'web'],
     # Cargas
     'data' : [
+        # Security
         "security/ir.model.access.csv",
+        # Data
+        "data/specializations_views.xml",
+        # Views
         "views/area_specialization_view.xml",
-        "views/specialist_user_view.xml",
+        "views/res_partner_views.xml",
         "views/patient_view.xml",
         "views/initial_questionnarie_view.xml",
+        "views/sessions_views.xml",
+        "views/services_views.xml"
     ],
     'installable': True,
     
