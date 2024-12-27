@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_area_specialization_specialist,area_specialization,model_area_specialization,fupagua_system.group_specialist_fupagua,1,0,0,0
+access_patient_specialist,patient,model_patient,fupagua_system.group_specialist_fupagua,1,1,1,0
+access_initial_questionnarie_specialist,initial_questionnarie,model_initial_questionnarie,fupagua_system.group_specialist_fupagua,1,1,1,0
+access_sessions_fupagua_specialist,sessions_fupagua,model_sessions_fupagua,fupagua_system.group_specialist_fupagua,1,1,1,0
+access_services_fupagua_specialist,services_fupagua,model_services,fupagua_system.group_specialist_fupagua,1,1,1,0
