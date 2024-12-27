@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.menu" id="mail.menu_root_discuss">
+            <field name="name">Discuss</field>
+            <field name="groups_id" eval="[(6,0, [ref('base.group_system') ] )]"/>
+        </record>
+
+        <record model="ir.ui.menu" id="contacts.res_partner_menu_contacts">
+            <field name="name">Contacts</field>
+            <field name="groups_id" eval="[(6,0, [ref('base.group_system') ] )]"/>
+        </record>
+
+        <record model="ir.ui.menu" id="base.menu_management">
+            <field name="name">Apps</field>
+            <field name="groups_id" eval="[(6,0, [ref('base.group_system') ] )]"/>
+        </record>
+
+        <!-- <record model="ir.ui.menu" id="website.menu_website_configuration">
+            <field name="name">Website</field>
+            <field name="groups_id" eval="[(6,0, [ref('base.group_system') ] )]"/>
+        </record>
+
+        <record model="ir.ui.menu" id="utm.menu_link_tracker_root">
+            <field name="name">Link Tracker</field>
+            <field name="groups_id" eval="[(6,0, [ref('base.group_system') ] )]"/>
+        </record> -->
+    </data>
+</odoo>
