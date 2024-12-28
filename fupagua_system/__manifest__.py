@@ -12,10 +12,15 @@
     # Cargas
     'data' : [
         # Security
+        "security/ir_groups_views.xml",
         "security/ir.model.access.csv",
+        # Access
+        "security/receptionist/ir.model.access.csv",
+        "security/specialist/ir.model.access.csv",
         # Data
         "data/specializations_views.xml",
         # Views
+        "views/ir_menu_views.xml",
         "views/area_specialization_view.xml",
         "views/res_partner_views.xml",
         "views/patient_view.xml",

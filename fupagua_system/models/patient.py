@@ -16,9 +16,8 @@ class Patient(models.Model):
     age = fields.Integer(string='Age')
     
     phone = fields.Char(string="Phone")
-    
-    
-    
-    
-    
-    
+
+    current_area_specialization_id = fields.Many2one(
+        'area_specialization',
+        string='Current Area Specialization',
+    )

@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0-20241029\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-26 23:00+0000\n"
-"PO-Revision-Date: 2024-12-26 23:00+0000\n"
+"POT-Creation-Date: 2024-12-26 23:15+0000\n"
+"PO-Revision-Date: 2024-12-26 23:15+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -90,6 +90,11 @@ msgstr ""
 #: model:ir.model,name:fupagua_system.model_initial_questionnarie
 msgid "Cuestionario Inicial es lo mazimo para poder compartir "
 msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_patient__current_area_specialization_id
+msgid "Current Area Specialization"
+msgstr "Especialización del área actual"
 
 #. module: fupagua_system
 #: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__provider_by
@@ -317,13 +322,9 @@ msgid "Relationship"
 msgstr ""
 
 #. module: fupagua_system
+#: model:ir.actions.act_window,name:fupagua_system.services_fupagua_view_action
 #: model:ir.model.fields,field_description:fupagua_system.field_res_partner__service_ids
 #: model:ir.model.fields,field_description:fupagua_system.field_res_users__service_ids
-msgid "Service"
-msgstr "Servicio"
-
-#. module: fupagua_system
-#: model:ir.actions.act_window,name:fupagua_system.services_fupagua_view_action
 #: model:ir.ui.menu,name:fupagua_system.services_fupagua_view_menu
 #: model_terms:ir.ui.view,arch_db:fupagua_system.services_fupagua_view_form
 #: model_terms:ir.ui.view,arch_db:fupagua_system.services_fupagua_view_tree
