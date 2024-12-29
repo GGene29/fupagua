@@ -19,6 +19,8 @@
         "security/specialist/ir.model.access.csv",
         # Data
         "data/specializations_views.xml",
+        "data/pregnancy_complication_views.xml",
+        "data/habits_pregnancy_data_views.xml",
         # Views
         "views/ir_menu_views.xml",
         "views/area_specialization_view.xml",
@@ -26,7 +28,9 @@
         "views/patient_view.xml",
         "views/initial_questionnarie_view.xml",
         "views/sessions_views.xml",
-        "views/services_views.xml"
+        "views/services_views.xml",
+        "views/complication_pregnancy_view.xml",
+        "views/habits_pregnancy_view.xml"
     ],
     'installable': True,
     

@@ -58,6 +58,8 @@ class Questionnarie(models.Model):
     
     # Parte III Familiar
     
+    biological_parents_charge = fields.Boolean(string="biological parents in charge", default=True)
+    
     mother_name = fields.Char(string="Mother Name")
     
     mother_age = fields.Integer(string="Mother age")
@@ -122,7 +124,7 @@ class Questionnarie(models.Model):
         ("1" , "Mother"),
         ("2", "Father"),
         ("3", "Other")], 
-        string="Caraviger"),
+        string="Caraviger")
     
     name_caragiver = fields.Char(string="Full name caragiver")
     
@@ -160,7 +162,7 @@ class Questionnarie(models.Model):
     
     family_condition = fields.Text(string="Family Condition")
     
-    adopted_child = fields.Boolean(string="Adopted")
+    adopted_child = fields.Boolean(string="Adopted", default=False)
     
     adoption_age = fields.Integer(string="Adoption process age")
     
@@ -202,11 +204,11 @@ class Questionnarie(models.Model):
         [('0', 'induce'),
         ('1', 'natural')], string="type abortion")
     
-    # pregnancy_type_complication = fields.Many2many('complication_pregnancy')
+    pregnancy_type_complication = fields.Many2many('complication_pregnancy')
     
     other_complication = fields.Text(string="Other")
     
-    # habits_pregnancy = fields.Many2many('habits_pregnancy')
+    type_habits_pregnancy = fields.Many2many('habits_pregnancy')
     
     habits_others = fields.Text(string="Habits Others")
     

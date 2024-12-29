@@ -24,10 +24,14 @@
             <field name="arch" type="xml">
                 <form>
                     <sheet>
+                        <h2>CUESTIONARIO INICIAL</h2>
+                        <h3>ENTREVISTA MÉDICO, EDUCATIVO, SOCIAL Y FAMILIAR</h3>
+                        <group>
+                            <field name="registration_code"/>
+                            <field name="registration_date"/>
+                        </group>
                         <group>
                             <group col="1"> 
-                                <field name="registration_code"/>
-                                <field name="registration_date"/>
                                 <field name="names"/>
                                 <field name="lastname"/>
                                 <field name="age"/>
@@ -45,7 +49,8 @@
                             </group>
                         </group>
                         <notebook>
-                            <page string="Part Two">
+                            <page string="MOTIVO CONSULTA">
+                                <h4>II Motivo de Consulta</h4>
                                 <group>
                                     <field name="evaluation_reason"/>
                                     <field name="age_difference"/>
@@ -55,8 +60,13 @@
                                 </group>
                             </page>
 
-                            <page string="Part Three">
+                            <page string="FAMILIAR">
+                                <h4>III Familiar</h4>
                                 <group>
+                                    <field name="biological_parents_charge" />
+                                </group>
+                                <!-- Biological Parents -->
+                                <group attrs="{'invisible':[('biological_parents_charge','=',False)]}">
                                     <group col="1">
                                         <field name="mother_name" />
                                         <field name="mother_age" />
@@ -90,6 +100,47 @@
                                         <field name="opinion_behavior_father" />
                                     </group>
                                     
+                                </group>
+                                <!-- Caragiver -->
+                                <group attrs="{'invisible':[('biological_parents_charge','=',True)]}">
+                                    <group col="1">
+                                        <field name="caragiver" />
+                                        <field name="name_caragiver" />
+                                        <field name="caragiver_age" />
+                                        <field name="caragiver_nationality" />
+                                        <field name="caragiver_id" />
+                                        <field name="caragiver_educational" />
+                                        <field name="caragiver_occupation" />                                        
+                                    </group>
+                                    <group col="2">
+                                        <field name="caragiver_work_schedule" />
+                                        <field name="caragiver_salary" />
+                                        <field name="caragiver_support" />
+                                        <field name="caragiver_status" />
+                                        <field name="caragiver_phone" />
+                                        <field name="caragiver_relationship" />
+                                        <field name="opinion_behavior_caragiver" />
+                                    </group>
+                                </group>
+                                <!-- Información general Familiar -->
+                                <h5>Información General Familiar</h5>
+                                <group>
+                                    <field name="another_need_help"/>
+                                    <field name="bioligical_condition"/>
+                                    <field name="family_condition"/>
+                                    <field name="adopted_child"/>
+                                </group>
+                                <group attrs="{'invisible':[('adopted_child','=',False)]}">
+                                    <field name="adoption_age"/>
+                                    <field name="adoption_agreement"/>
+                                    <field name="knows_adopted"/>
+                                    <field name="reaction_adopted_family"/>
+                                </group>    
+                                <!-- Datos Socioeconómicos -->
+                                <h4> IV Datos Socioeconómicos </h4>
+                                <group>
+                                    <field name="type_housing"/>
+                                    <field name="describe_coexistence"/>
                                 </group>
                             </page>
                         </notebook>
