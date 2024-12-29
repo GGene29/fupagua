@@ -194,7 +194,7 @@ class Questionnarie(models.Model):
     
     desired_child_sex = fields.Text(string="Sex of the child was desired")
     
-    pregnancy_attitude = fields.Text(string="Pregnancy attirude parent")
+    pregnancy_attitude = fields.Text(string="Pregnancy attitude parent")
     
     number_pregnancy = fields.Integer(string="Number of pregnancies")
     

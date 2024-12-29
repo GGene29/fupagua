@@ -143,6 +143,31 @@
                                     <field name="describe_coexistence"/>
                                 </group>
                             </page>
+                            <page string="GESTACIÓN/NACIMIENTO">
+                                <h4> V Antecedentes</h4>
+                                <group>
+                                    <group col="1">
+                                        <field name="planned_pregnancy"/>
+                                        <field name="desired_child"/>
+                                        <field name="was_desired"/>
+                                        <field name="abortion_attempt" attrs="{'invisible':[('desired_child','=',True)]}"/>
+                                        <field name="desired_child_sex"/>
+                                        <field name="pregnancy_attitude"/>
+                                        <field name="number_pregnancy"/>
+                                        <field name="previous_abortion"/>
+                                        <field name="type_abortion" attrs="{'invisible':[('previous_abortion','=',False)]}"/>
+                                    </group>
+
+                                    <group col="2">
+                                        <field name="pregnancy_type_complication"/>                                    
+                                        <field name="other_complication"/>
+                                        <field name="type_habits_pregnancy"/>
+                                        <field name="habits_others"/>
+                                    </group>
+                                </group>
+                                <h4> VI Nacimiento</h4>
+                            
+                            </page>
                         </notebook>
                     </sheet>
                 </form>
