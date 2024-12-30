@@ -214,5 +214,147 @@ class Questionnarie(models.Model):
     
     # VI Nacimiento 
     
+    age_mother_delivery = fields.Integer(string="Age of mother ar delivery")
     
+    weeks_gestation = fields.Integer(string="Weeks of gestation")
+    
+    type_delivery = fields.Selection([
+        ('1','Cesarea'),
+        ('2','Natural')], string="Type of labor", default='2')
+    
+    cause_cesarean = fields.Text(string="Cause of cesarean")
+    
+    length_labor = fields.Char(string="Length of labor")
+    
+    presentation_newborn = fields.Char(string="Presentation of newborn")    
+    
+    forceps_required = fields.Boolean(string="Required forceps")
+    
+    anesthesia_required = fields.Boolean(string="Required anesthesia")
+    
+    birth_weigth = fields.Char(string="Borth weigth")
+    
+    birth_heigth = fields.Char(string="heigth")
+    
+    normal_breathing = fields.Char(string="Normal breathing")
+    
+    spontaneous_crying = fields.Char(string="Spontaneous crying")
+    
+    birth_complications_type = fields.Many2many('birth_complications')
+    
+    another_birth_complication = fields.Char(string="Another birth complication")
+    
+    # VII Alimentación
+    
+    exclusive_breatfeeding = fields.Char(string="Did the child enjoy exclusive breastfeeding?")
+    
+    age_combine_formula = fields.Char(string="At what age did you begin to combine breastfeeding with milk formulas")
+    
+    specify_formulas = fields.Text(string="Specify milk formulas")
+    
+    breatfeeding_discontinued = fields.Char(string="When was breastfeeding discontinued?")
+    
+    semisolids_which = fields.Text(string="When did you initiate semisolids and which ones did you use?")
+    
+    solids_which = fields.Text(string="When did you initiate solids and which ones did you use?")
+    
+    current_diet = fields.Text(string="What is the current diet like?")
+    
+    selective_foods = fields.Boolean(string="Is he/she selective about foods")
+    
+    specify_like_dislike = fields.Text(string="Specify which ones he/she prefers and which one he/she dislikes:")
+    
+    intolerance = fields.Boolean(string="Does he/she have intolerance to any food")
+    
+    specify_intolerance = fields.Text(string="Specify intolerance food")
+    
+    eats_alone = fields.Boolean(string="Eats alone")
+    
+    down_eats = fields.Text(string="Sits down to eat and finishes his/her meal")
+    
+    # VIII Desarrollo Evolutivo 
+    
+    # IX Accidentes Enfermedades
+    
+    have_accident = fields.Boolean(string="Have you ever had an accident?")
+    
+    what_type = fields.Text(string="When and what type?")
+    
+    needed_operation = fields.Boolean(string="Have you ever needed an operation?")
+    
+    type_operation = fields.Text(string="When and what type?")
+    
+    receiving_medication = fields.Text(string="Are you receiving any medication:")
+    
+    treating_physician = fields.Char(string="Treating physician")
+    
+    pediatrician_monitors = fields.Char(string="Pediatrician who monitors you")
+    
+    vaccinations = fields.Char(string="Have you had all your vaccinations:")
+    
+    # type_have_illnesses = fields.Many2many('have_illnesses', string="Have you had any of the following illnesses, indicate if they are common")
+    
+    other_illnesses = fields.Char(string="Other illness:")
+    
+    concerns_health = fields.Text(string="Do you have any concerns about your son or daughter's health?")
+    
+    # X Escolaridad Aprendizaje
+    
+    enter_school_age = fields.Integer(string="At what age did you enter school:")
+    
+    attitude_school = fields.Text(string="What was your initial attitude towards school:")
+    
+    repeated_school = fields.Boolean(string="Have you repeated boolean")
+    
+    what_grade = fields.Char(string="what grade")
+    
+    minimun_promoted = fields.Text(string="Have you achieved the minimum objectives to be promoted to the next level:")
+    
+    interrumped_school = fields.Boolean(string="Have you interrupted your attendance for a long time")
+    
+    was_cause = fields.Text(string="what was the cause")
+    
+    changes_school = fields.Boolean(string="Have you changed schools")
+    
+    when_which = fields.Text(string="when and to which ones")
+    
+    performance_writing = fields.Text(string="Writing")
+    
+    performance_reading = fields.Text(string="Reading")
+
+    performance_calculus = fields.Text(string="Calculus")
+
+    performance_social_interaction = fields.Text(string="Social Interaction")
+    
+    subjects_problems = fields.Text(string="In which subjects do you have problems:")
+    
+    difficult_subject = fields.Text(string="If you have difficulty in any subject, mention from which grade onwards these became more noticeable:")
+    
+    likes_subject = fields.Char(string="What are the subjects that you like the most:")
+    
+    learning_home = fields.Text(string="How do you face the teaching-learning processes at home:")
+    
+    face_homework = fields.Text(string="How do you face homework and what strategies do you have to do them:")
+    
+    time_homrework = fields.Text(string="At what time do you usually do homework and where:")
+    
+    what_motivate = fields.Text(string="What motivates you:")
+    
+    reaction_achievements = fields.Text(string="What is your reaction to achievements and failures (indicate Examples):")
+    
+    excited_share = fields.Text(string="When you get excited about something or do something you know is right, do you show it to other people? (a)")
+    
+    part_recreational = fields.Text(string="Does your child take part in recreational or sports activities on his/her own initiative (which ones):")
+    
+    activities_frequently = fields.Text(string="Does your child have any skills or do any activities frequently?")
+
+    # XI Comportamiento General
+    
+    aggressive_family = fields.Text(string="Is he/she sometimes aggressive towards his/her caregivers or family members?")
+    
+    aggressive_outside_family = fields.Text(string="Is he/she aggressive towards people outside the family?")
+    
+    hurt_deliberately = fields.Text(string="Has he/she ever deliberately hurt himself/herself, for example by biting, hitting or pulling his/her hair?")
+    
+    other_comments_general = fields.Text(string="Any other comments:")
     

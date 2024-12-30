@@ -7,3 +7,4 @@ from . import sessions
 from . import services
 from . import complication_pregnancy
 from . import habits_pregnancy
+from . import birth_complications

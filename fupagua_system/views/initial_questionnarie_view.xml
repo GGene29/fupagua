@@ -49,7 +49,8 @@
                             </group>
                         </group>
                         <notebook>
-                            <page string="MOTIVO CONSULTA">
+                           
+                            <page string="FAMILIAR">
                                 <h4>II Motivo de Consulta</h4>
                                 <group>
                                     <field name="evaluation_reason"/>
@@ -58,9 +59,7 @@
                                     <field name="diagnosis_examination"/>
                                     <field name="treatment_evolution"/>
                                 </group>
-                            </page>
 
-                            <page string="FAMILIAR">
                                 <h4>III Familiar</h4>
                                 <group>
                                     <field name="biological_parents_charge" />
@@ -125,17 +124,19 @@
                                 <!-- Información general Familiar -->
                                 <h5>Información General Familiar</h5>
                                 <group>
-                                    <field name="another_need_help"/>
-                                    <field name="bioligical_condition"/>
-                                    <field name="family_condition"/>
-                                    <field name="adopted_child"/>
+                                    <group col="1">
+                                        <field name="another_need_help"/>
+                                        <field name="bioligical_condition"/>
+                                        <field name="family_condition"/>
+                                        <field name="adopted_child"/>
+                                    </group>
+                                    <group col="2" attrs="{'invisible':[('adopted_child','=',False)]}">
+                                        <field name="adoption_age"/>
+                                        <field name="adoption_agreement"/>
+                                        <field name="knows_adopted"/>
+                                        <field name="reaction_adopted_family"/>
+                                    </group>    
                                 </group>
-                                <group attrs="{'invisible':[('adopted_child','=',False)]}">
-                                    <field name="adoption_age"/>
-                                    <field name="adoption_agreement"/>
-                                    <field name="knows_adopted"/>
-                                    <field name="reaction_adopted_family"/>
-                                </group>    
                                 <!-- Datos Socioeconómicos -->
                                 <h4> IV Datos Socioeconómicos </h4>
                                 <group>
@@ -143,7 +144,8 @@
                                     <field name="describe_coexistence"/>
                                 </group>
                             </page>
-                            <page string="GESTACIÓN/NACIMIENTO">
+
+                            <page string="GESTACIÓN">
                                 <h4> V Antecedentes</h4>
                                 <group>
                                     <group col="1">
@@ -166,7 +168,69 @@
                                     </group>
                                 </group>
                                 <h4> VI Nacimiento</h4>
-                            
+                                <group>
+                                    <group col="1">
+                                        <field name="age_mother_delivery"/>
+                                        <field name="weeks_gestation"/>
+                                        <field name="type_delivery"/>
+                                        <field name="cause_cesarean" attrs="{'invisible':[('type_delivery','=','2')]}"/>
+                                        <field name="length_labor" attrs="{'invisible':[('type_delivery','=','1')]}"/>
+                                        <field name="presentation_newborn" attrs="{'invisible':[('type_delivery','=','1')]}"/>
+                                        <field name="forceps_required" attrs="{'invisible':[('type_delivery','=','1')]}"/>
+                                        <field name="anesthesia_required" attrs="{'invisible':[('type_delivery','=','1')]}"/>
+                                    </group>
+
+                                    <group col="2">
+                                        <field name="birth_weigth"/>
+                                        <field name="birth_heigth"/>
+                                        <field name="normal_breathing"/>
+                                        <field name="spontaneous_crying" />
+                                        <field name="birth_complications_type"/>
+                                        <field name="another_birth_complication"/>
+                                    </group>
+                                </group>
+
+                            </page>
+
+                            <page string="DESARROLLO">
+                                <!-- ALIMENTACIÖN VII -->
+                                <h4>VII Alimentación</h4>
+                                <group>
+                                    <group col="1">
+                                        <field name="exclusive_breatfeeding"/>
+                                        <field name="age_combine_formula"/>
+                                        <field name="specify_formulas"/>
+                                        <field name="breatfeeding_discontinued"/>
+                                        <field name="semisolids_which"/>
+                                        <field name="solids_which"/>
+                                    </group>
+
+                                    <group col="2">
+                                        <field name="current_diet"/>
+                                        <field name="selective_foods"/>
+                                        <field name="specify_like_dislike"/>
+                                        <field name="intolerance"/>
+                                        <field name="specify_intolerance"/>
+                                        <field name="eats_alone"/>
+                                        <field name="down_eats"/>
+                                    
+                                    </group>
+                                </group>
+
+                                <!-- DESAROLLO EVOLUTIVO -->
+                                <h4>VIII Desarrollo Evolutivo</h4>
+                                <p>Toda la locura que complementa el desarrollo evolutivo de los niños VISION MISIO VISTA LOCURA</p>
+                                
+                            </page>
+
+                            <!-- Accidentes - Escolaridad - General -->
+
+                            <page string="GENERAL">
+                                <h4>IX Accidentes o Enfermedades</h4>
+                                <group>
+                                    <group></group>
+                                    <group></group>
+                                </group>
                             </page>
                         </notebook>
                     </sheet>
