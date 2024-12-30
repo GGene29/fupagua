@@ -42,7 +42,7 @@
         </record>
 
         <!-- Menu -->
-        <menuitem name="Habits Pregnancy" id="habits_pregnancy_type_menu" action="habits_pregnancy_action_server" sequence="110" />
+        <!-- <menuitem name="Habits Pregnancy" id="habits_pregnancy_type_menu" action="habits_pregnancy_action_server" sequence="110" /> -->
 
     </data>
 </odoo>

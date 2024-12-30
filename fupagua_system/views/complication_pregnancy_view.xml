@@ -42,7 +42,7 @@
         </record>
 
         <!-- Menu -->
-        <menuitem name="Complication Pregnancy" id="complication_pregnancy_type_menu" action="complication_pregnancy_action_server" sequence="100" />
+        <!-- <menuitem name="Complication Pregnancy" id="complication_pregnancy_type_menu" action="complication_pregnancy_action_server" sequence="100" /> -->
 
     </data>
 </odoo>

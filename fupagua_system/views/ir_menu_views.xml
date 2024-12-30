@@ -25,5 +25,16 @@
             <field name="name">Link Tracker</field>
             <field name="groups_id" eval="[(6,0, [ref('base.group_system') ] )]"/>
         </record> -->
+
+        <menuitem name="Questionnaire supplements" id="questionnaire_supplements_menu" sequence="30"/>
+
+        <menuitem name="Complication Pregnancy" id="complication_pregnancy_type_menu" action="complication_pregnancy_action_server" parent="questionnaire_supplements_menu" sequence="10"/>
+
+        <menuitem name="Habits Pregnancy" id="habits_pregnancy_type_menu" action="habits_pregnancy_action_server" parent="questionnaire_supplements_menu" sequence="20" />
+
+        <menuitem name="Birth Complication" id="birth_complications_menu_item" action="birth_complications_action_server" parent="questionnaire_supplements_menu" sequence="30"/>
+
+
+
     </data>
 </odoo>
