@@ -10,8 +10,8 @@
             <field name="arch" type="xml">
                 <tree>
                     <field name="registration_code"/>
-                    <field name="names"/>
-                    <field name="lastname"/>
+                    <!-- <field name="name"/> -->
+                    <!-- <field name="lastname"/> -->
                 
                 </tree>
             </field>
@@ -28,11 +28,12 @@
                         <h3>ENTREVISTA MÉDICO, EDUCATIVO, SOCIAL Y FAMILIAR</h3>
                         <group>
                             <field name="registration_code"/>
-                            <field name="registration_date"/>
+                            <!-- <field name="patient_id"/> -->
+                            <field name="create_date"/>
                         </group>
                         <group>
                             <group col="1"> 
-                                <field name="names"/>
+                                <field name="name"/>
                                 <field name="lastname"/>
                                 <field name="age"/>
                                 <field name="identification"/>
