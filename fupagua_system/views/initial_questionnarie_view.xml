@@ -192,7 +192,7 @@
 
                             </page>
 
-                            <page string="DESARROLLO">
+                            <page string="MÉDICO">
                                 <!-- ALIMENTACIÖN VII -->
                                 <h4>VII Alimentación</h4>
                                 <group>
@@ -217,20 +217,72 @@
                                     </group>
                                 </group>
 
-                                <!-- DESAROLLO EVOLUTIVO -->
-                                <h4>VIII Desarrollo Evolutivo</h4>
-                                <p>Toda la locura que complementa el desarrollo evolutivo de los niños VISION MISIO VISTA LOCURA</p>
-                                
+                                <h4>IX Accidentes o Enfermedades</h4>
+                                <group>
+                                    <group col="1">
+                                        <field name="have_accident" />
+                                        <field name="what_type" />
+                                        <field name="needed_operation" />
+                                        <field name="type_operation" />
+                                        <field name="receiving_medication" />
+                                        <field name="treating_physician" />
+                                        <field name="pediatrician_monitors" />
+                                    </group>
+                                    <group col="2">
+                                        <field name="vaccinations" />
+                                        <!-- <field name="type_have_illnesses" /> -->
+                                        <field name="other_illnesses" />
+                                        <field name="concerns_health" />
+                                    </group>
+                                </group>
+                            </page>
+
+                            <page string="DESARROLLO EVOLUTIVO">
+                                <!-- DESAROLLO EVOLUTIVO -->                                
+                            
                             </page>
 
                             <!-- Accidentes - Escolaridad - General -->
 
-                            <page string="GENERAL">
-                                <h4>IX Accidentes o Enfermedades</h4>
+                            <page string="SOCIAL">
+                                <h4>X Escolaridad Aprendizaje</h4>
                                 <group>
-                                    <group></group>
-                                    <group></group>
+                                    <group col="1">
+                                        <field name="enter_school_age" />
+                                        <field name="attitude_school" />
+                                        <field name="repeated_school" />
+                                        <field name="what_grade" />
+                                        <field name="minimun_promoted" />
+                                        <field name="interrumped_school" />
+                                        <field name="was_cause" />
+                                        <field name="changes_school" />
+                                        <field name="when_which" />
+                                        <field name="performance_writing" />
+                                        <field name="performance_reading" />
+                                        <field name="performance_calculus" />
+                                        <field name="performance_social_interaction" />
+                                        <field name="subjects_problems" />
+                                        <field name="difficult_subject" />
+                                    </group>
+                                    <group col="2">
+                                        <field name="likes_subject" />
+                                        <field name="learning_home" />
+                                        <field name="face_homework" />
+                                        <field name="time_homrework" />
+                                        <field name="what_motivate" />
+                                        <field name="reaction_achievements" />
+                                        <field name="excited_share" />
+                                        <field name="part_recreational" />
+                                        <field name="activities_frequently" />
+                                    </group>
                                 </group>
+                                <h4> XI COMPORTAMIENTO GENERAL</h4>
+                                <group>
+                                    <field name="aggressive_family" />
+                                    <field name="aggressive_outside_family" />
+                                    <field name="hurt_deliberately" />
+                                    <field name="other_comments_general" />
+                                </group> 
                             </page>
                         </notebook>
                     </sheet>
