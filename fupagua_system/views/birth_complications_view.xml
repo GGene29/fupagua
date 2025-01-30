@@ -34,11 +34,11 @@
             <field name="model_id" ref="model_birth_complications"/>
             <field name="state">code</field>
             <field name="code">
-              action = {
-                "type": "ir.actions.act_window",
-                "view_mode": "tree,form",
-                "res_model": model._name,
-              }
+                action = {
+                    "type": "ir.actions.act_window",
+                    "view_mode": "tree,form",
+                    "res_model": model._name,
+                }
             </field>
         </record>
 
