@@ -12,26 +12,14 @@ class Questionnarie(models.Model):
         
     # Datos Personales
     
-    # names = fields.Char(string='Names')
-    
-    # lastname = fields.Char(string='Lastname')
-    
     identification = fields.Integer(string="CI")
-    
-    # date_of_birth = fields.Date(string="Date Birthday")
-    
-    # age = fields.Integer(string='Age')
-    
-    # phone = fields.Char(string="Phone")
     
     nationality = fields.Selection([
         ('1', 'Venezolano'),
         ('2', 'Extranjero')], string="Nationality", default='1')
     
     place_of_birth = fields.Char(string='Plance of birthday')
-    
-    # sex = fields.Selection( [('1', 'F'), ('2', 'M')], string="Sexo")
-    
+        
     schooling = fields.Selection([
         ('0', 'Inicial'),
         ('1', 'Primaria'),
@@ -48,6 +36,8 @@ class Questionnarie(models.Model):
     # Parte II Motivo Consulta
     
     evaluation_reason = fields.Text(string="evaluation_reason")
+    
+    # referido por
     
     age_difference = fields.Integer(string="Difference Age")
     
@@ -359,12 +349,3 @@ class Questionnarie(models.Model):
     
     other_comments_general = fields.Text(string="Any other comments:")
     
-    
-    # METHOD
-    
-    # def create_new_patient(self):
-    #     new_patient = self.env['patient'].create({
-    #         'create_patient' : self.registration_date,
-    #         'name' : self.names ,
-    #     })
-        

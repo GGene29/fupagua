@@ -58,7 +58,7 @@
                                     <field name="age_difference"/>
                                     <field name="difference_description"/>
                                     <field name="diagnosis_examination"/>
-                                    <field name="treatment_evolution"/>
+                                    <field name="treatment_evolution" position="top"/>
                                 </group>
 
                                 <h4>III Familiar</h4>

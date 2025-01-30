@@ -24,4 +24,4 @@ class Patient(models.Model):
         string='Current Area Specialization',
     )
     
-    # questionnarie = fields.One2many('initial_questionnarie', 'patient_id', string="Questionnarie")
+    questionnarie = fields.One2many('initial_questionnarie', 'patient_id', string="Questionnarie")
