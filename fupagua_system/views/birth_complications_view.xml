@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+
+        <!-- View Tree -->
+        <record model="ir.ui.view" id="birth_complications_view">
+            <field name="name">birth_complications</field>    
+            <field name="model">birth_complications</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name" />
+                </tree>
+            </field>
+        </record>
+
+    <!-- View Form -->
+        <record model="ir.ui.view" id="birth_complications_form">
+            <field name="name">birth_complications</field>    
+            <field name="model">birth_complications</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="name" />    
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        
+    <!-- Action Server View -->
+        <record model="ir.actions.server" id="birth_complications_action_server">
+            <field name="name">Birth Complication</field>
+            <field name="model_id" ref="model_birth_complications"/>
+            <field name="state">code</field>
+            <field name="code">
+              action = {
+                "type": "ir.actions.act_window",
+                "view_mode": "tree,form",
+                "res_model": model._name,
+              }
+            </field>
+        </record>
+
+    <!-- Menu -->
+        <!-- <menuitem name="Birth Complication" id="birth_complications_menu_item" sequence="120" action="birth_complications_action_server"/> -->
+    
+    </data>
+</odoo>
