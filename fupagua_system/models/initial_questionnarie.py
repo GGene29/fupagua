@@ -207,6 +207,8 @@ class Questionnarie(models.Model):
     
     pregnancy_type_complication = fields.Many2many('complication_pregnancy')
     
+    period_pregnancy = fields.Text(string="Pregnancy Period")
+    
     other_complication = fields.Text(string='Other')
     
     type_habits_pregnancy = fields.Many2many('habits_pregnancy')

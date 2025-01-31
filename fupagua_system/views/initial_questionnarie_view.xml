@@ -168,7 +168,8 @@
                                     <group col="2">
                                         <field name="monitor_pregnancy" />
                                         <field name="kilos_gain_pregnancy" />
-                                        <field name="pregnancy_type_complication"/>                                    
+                                        <field name="pregnancy_type_complication"/>
+                                        <field name="period_pregnancy" />                                    
                                         <field name="other_complication"/>
                                         <field name="type_habits_pregnancy"/>
                                         <field name="habits_others"/>

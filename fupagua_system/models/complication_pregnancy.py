@@ -7,4 +7,3 @@ class ComplicationPregnancy(models.Model):
     
     name = fields.Char(string="Complication Pregnancy", required="1")
     
-    pregnancy_period = fields.Integer(string="Pregnancy Period")

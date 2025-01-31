@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0-20241118\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-24 10:07+0000\n"
-"PO-Revision-Date: 2025-01-24 10:07+0000\n"
+"POT-Creation-Date: 2025-01-31 03:52+0000\n"
+"PO-Revision-Date: 2025-01-31 03:52+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -292,7 +292,10 @@ msgstr ""
 #. module: fupagua_system
 #: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__diagnosis_examination
 msgid "Diagnosis or Examination"
-msgstr "Si ha recibido algún diagnóstico, mencione cuál ha sido y quien lo ha realizado; así como los estudios o exámenes que le han realizado y sus resultados."
+msgstr ""
+"Si ha recibido algún diagnóstico, mencione cuál ha sido y quien lo ha "
+"realizado; así como los estudios o exámenes que le han realizado y sus "
+"resultados."
 
 #. module: fupagua_system
 #: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__exclusive_breatfeeding
@@ -302,12 +305,16 @@ msgstr ""
 #. module: fupagua_system
 #: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__age_difference
 msgid "Difference Age"
-msgstr "¿Qué edad tenía su hijo o hija cuando notó que existía una diferencia en su desarrollo con respecto a otros niños?"
+msgstr ""
+"¿Qué edad tenía su hijo o hija cuando notó que existía una diferencia en su "
+"desarrollo con respecto a otros niños?"
 
 #. module: fupagua_system
 #: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__difference_description
 msgid "Difference Text"
-msgstr "Describa cómo ha sido la conducta o situación que le preocupa desde sus inicios."
+msgstr ""
+"Describa cómo ha sido la conducta o situación que le preocupa desde sus "
+"inicios."
 
 #. module: fupagua_system
 #: model:ir.model.fields,field_description:fupagua_system.field_area_specialization__display_name
@@ -323,7 +330,7 @@ msgstr ""
 
 #. module: fupagua_system
 #: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__concerns_health
-msgid "Do you have any concerns about your son or daughter's health?"
+msgid "Do you have any concerns about your son or daughters health?"
 msgstr ""
 
 #. module: fupagua_system
@@ -365,6 +372,8 @@ msgstr ""
 
 #. module: fupagua_system
 #: model:ir.model.fields.selection,name:fupagua_system.selection__initial_questionnarie__caragiver_nationality__2
+#: model:ir.model.fields.selection,name:fupagua_system.selection__initial_questionnarie__father_nationality__2
+#: model:ir.model.fields.selection,name:fupagua_system.selection__initial_questionnarie__mother_nationality__2
 #: model:ir.model.fields.selection,name:fupagua_system.selection__initial_questionnarie__nationality__2
 msgid "Extranjero"
 msgstr ""
@@ -554,6 +563,11 @@ msgid ""
 msgstr ""
 
 #. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__kilos_gain_pregnancy
+msgid "Kilos gain pregnancy?"
+msgstr ""
+
+#. module: fupagua_system
 #: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__relationship
 msgid "Kinship relationship with the evaluated"
 msgstr "Relación de parentezco con el evaluado"
@@ -648,11 +662,6 @@ msgid "Mother Name"
 msgstr ""
 
 #. module: fupagua_system
-#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__mother_nationality
-msgid "Mother Nationality"
-msgstr ""
-
-#. module: fupagua_system
 #: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__mother_occupation
 msgid "Mother Occupation"
 msgstr ""
@@ -686,6 +695,8 @@ msgstr "Nombres"
 
 #. module: fupagua_system
 #: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__caragiver_nationality
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__father_nationality
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__mother_nationality
 #: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__nationality
 msgid "Nationality"
 msgstr "Nacionalidad"
@@ -721,6 +732,11 @@ msgid "Occupation Caragiver"
 msgstr ""
 
 #. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__origins
+msgid "Origins"
+msgstr "Procedencia"
+
+#. module: fupagua_system
 #: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__other_complication
 #: model:ir.model.fields.selection,name:fupagua_system.selection__initial_questionnarie__caragiver__3
 msgid "Other"
@@ -740,7 +756,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__patient_id
 #: model:ir.ui.menu,name:fupagua_system.patient_menu_item
 msgid "Patient"
-msgstr ""
+msgstr "Paciente"
 
 #. module: fupagua_system
 #: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__pediatrician_monitors
@@ -767,6 +783,11 @@ msgid "Planned Pregnancy"
 msgstr ""
 
 #. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__period_pregnancy
+msgid "Pregnancy Period"
+msgstr ""
+
+#. module: fupagua_system
 #: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__pregnancy_type_complication
 msgid "Pregnancy Type Complication"
 msgstr ""
@@ -784,12 +805,12 @@ msgstr ""
 #. module: fupagua_system
 #: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__previous_abortion
 msgid "Previous Abortion"
-msgstr ""
+msgstr "¿Tuvo algún aborto previo a este embarazo?"
 
 #. module: fupagua_system
 #: model:ir.model.fields.selection,name:fupagua_system.selection__initial_questionnarie__schooling__1
 msgid "Primaria"
-msgstr ""
+msgstr "Primaria"
 
 #. module: fupagua_system
 #: model:ir.ui.menu,name:fupagua_system.questionnaire_supplements_menu
@@ -805,12 +826,17 @@ msgstr "Cuestionario Inicial"
 #. module: fupagua_system
 #: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__performance_reading
 msgid "Reading"
-msgstr ""
+msgstr "Lectura"
 
 #. module: fupagua_system
 #: model:res.groups,name:fupagua_system.group_receptionist_fupagua
 msgid "Recepcionista FUPAGUA"
 msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__referred
+msgid "Referred by"
+msgstr "Referido por"
 
 #. module: fupagua_system
 #: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__caragiver_relationship
@@ -880,11 +906,16 @@ msgstr ""
 #: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__sex
 #: model:ir.model.fields,field_description:fupagua_system.field_patient__sex
 msgid "Sexo"
-msgstr "Sexo"
+msgstr ""
 
 #. module: fupagua_system
 #: model:ir.model.fields,field_description:fupagua_system.field_habits_pregnancy__name
 msgid "She had bad habits during pregnancy"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__monitor_pregnancy
+msgid "Since when did you monitor your pregnancy?"
 msgstr ""
 
 #. module: fupagua_system
@@ -946,7 +977,10 @@ msgstr ""
 #. module: fupagua_system
 #: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__treatment_evolution
 msgid "Treatment and evoluction"
-msgstr "Si ha recibido atención o la está recibiendo en este momento, mencione qué tratamiento ha recibido, durante cuánto tiempo, cómo ha sido la evolución y cuáles han sido las recomendaciones del tratamiento."
+msgstr ""
+"Si ha recibido atención o la está recibiendo en este momento, mencione qué "
+"tratamiento ha recibido, durante cuánto tiempo, cómo ha sido la evolución y "
+"cuáles han sido las recomendaciones del tratamiento."
 
 #. module: fupagua_system
 #: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__type_habits_pregnancy
@@ -985,6 +1019,8 @@ msgstr ""
 
 #. module: fupagua_system
 #: model:ir.model.fields.selection,name:fupagua_system.selection__initial_questionnarie__caragiver_nationality__1
+#: model:ir.model.fields.selection,name:fupagua_system.selection__initial_questionnarie__father_nationality__1
+#: model:ir.model.fields.selection,name:fupagua_system.selection__initial_questionnarie__mother_nationality__1
 #: model:ir.model.fields.selection,name:fupagua_system.selection__initial_questionnarie__nationality__1
 msgid "Venezolano"
 msgstr ""
@@ -1121,11 +1157,6 @@ msgstr ""
 #. module: fupagua_system
 #: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__father_name
 msgid "father Name"
-msgstr ""
-
-#. module: fupagua_system
-#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__father_nationality
-msgid "father Nationality"
 msgstr ""
 
 #. module: fupagua_system
