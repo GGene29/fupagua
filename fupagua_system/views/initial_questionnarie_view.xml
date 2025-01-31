@@ -44,6 +44,7 @@
                                 <field name="date_of_birth"/>
                                 <field name="place_of_birth"/>
                                 <field name="institution"/>
+                                <field name="origins"/>
                                 <field name="phone"/>
                                 <field name="provider_by"/>
                                 <field name="relationship"/>
@@ -53,12 +54,13 @@
                            
                             <page string="FAMILIAR">
                                 <h4>II Motivo de Consulta</h4>
+                                <field name="evaluation_reason"/>
                                 <group>
-                                    <field name="evaluation_reason"/>
+                                    <field name="referred"/>
                                     <field name="age_difference"/>
                                     <field name="difference_description"/>
                                     <field name="diagnosis_examination"/>
-                                    <field name="treatment_evolution" position="top"/>
+                                    <field name="treatment_evolution"/>
                                 </group>
 
                                 <h4>III Familiar</h4>
@@ -126,6 +128,8 @@
                                 <h5>Información General Familiar</h5>
                                 <group>
                                     <group col="1">
+                                        <field name="family_dynamics"/>
+                                        <field name="family_relationship"/>
                                         <field name="another_need_help"/>
                                         <field name="bioligical_condition"/>
                                         <field name="family_condition"/>
@@ -162,6 +166,8 @@
                                     </group>
 
                                     <group col="2">
+                                        <field name="monitor_pregnancy" />
+                                        <field name="kilos_gain_pregnancy" />
                                         <field name="pregnancy_type_complication"/>                                    
                                         <field name="other_complication"/>
                                         <field name="type_habits_pregnancy"/>
@@ -172,8 +178,8 @@
                                 <group>
                                     <group col="1">
                                         <field name="age_mother_delivery"/>
-                                        <field name="weeks_gestation"/>
                                         <field name="type_delivery"/>
+                                        <field name="weeks_gestation"/>
                                         <field name="cause_cesarean" attrs="{'invisible':[('type_delivery','=','2')]}"/>
                                         <field name="length_labor" attrs="{'invisible':[('type_delivery','=','1')]}"/>
                                         <field name="presentation_newborn" attrs="{'invisible':[('type_delivery','=','1')]}"/>
