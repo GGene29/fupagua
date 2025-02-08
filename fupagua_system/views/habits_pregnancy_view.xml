@@ -28,21 +28,11 @@
         </record>
 
         <!-- Action Server View-->
-        <record model="ir.actions.server" id="habits_pregnancy_action_server">
-            <field name="name">habits_pregnancy</field>
-            <field name="model_id" ref="model_habits_pregnancy"/>
-            <field name="state">code</field>
-            <field name="code">
-                action = {
-                    "type": "ir.actions.act_window",
-                    "view_mode": "tree,form",
-                    "res_model": model._name,
-                }
-            </field>
+        <record id="habits_pregnancy_view_action" model="ir.actions.act_window">
+            <field name="name">Habits Pregnancy</field>
+            <field name="res_model">habits_pregnancy</field>
+            <field name="view_mode">tree,form</field>
         </record>
-
-        <!-- Menu -->
-        <!-- <menuitem name="Habits Pregnancy" id="habits_pregnancy_type_menu" action="habits_pregnancy_action_server" sequence="110" /> -->
-
+    
     </data>
 </odoo>

@@ -32,21 +32,15 @@
         </record>
         
     <!-- Action Server View -->
-        <record model="ir.actions.server" id="area_specialization_action_server">
-            <field name="name">Area of Specializations</field>
-            <field name="model_id" ref="model_area_specialization"/>
-            <field name="state">code</field>
-            <field name="code">
-                action = {
-                    "type": "ir.actions.act_window",
-                    "view_mode": "tree,form",
-                    "res_model": model._name,
-                }
-            </field>
-        </record>
+
+    <record id="area_specialization_view_action" model="ir.actions.act_window">
+        <field name="name">Area of Specializations</field>
+        <field name="res_model">area_specialization</field>
+        <field name="view_mode">tree,form</field>
+    </record>
 
     <!-- Menu -->
-        <menuitem name="Area of Specialization" id="area_specialization_menu_item" sequence="60" action="area_specialization_action_server"/>
+        <menuitem name="Area of Specialization" id="area_specialization_menu_item" sequence="60" action="area_specialization_view_action"/>
 
     </data>
 </odoo>

@@ -28,21 +28,12 @@
         </record>
 
         <!-- Action Server View-->
-        <record model="ir.actions.server" id="complication_pregnancy_action_server">
+        
+        <record id="complication_pregnancy_view_action" model="ir.actions.act_window">
             <field name="name">complication pregnancy</field>
-            <field name="model_id" ref="model_complication_pregnancy"/>
-            <field name="state">code</field>
-            <field name="code">
-                action = {
-                    "type": "ir.actions.act_window",
-                    "view_mode": "tree,form",
-                    "res_model": model._name,
-                }
-            </field>
+            <field name="res_model">complication_pregnancy</field>
+            <field name="view_mode">tree,form</field>
         </record>
-
-        <!-- Menu -->
-        <!-- <menuitem name="Complication Pregnancy" id="complication_pregnancy_type_menu" action="complication_pregnancy_action_server" sequence="100" /> -->
-
+    
     </data>
 </odoo>

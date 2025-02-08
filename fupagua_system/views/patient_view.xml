@@ -41,21 +41,15 @@
         </record>
         
     <!-- Action Server View -->
-        <record model="ir.actions.server" id="patient_action_server">
-            <field name="name">patient_server</field>
-            <field name="model_id" ref="model_patient"/>
-            <field name="state">code</field>
-            <field name="code">
-                action = {
-                    "type": "ir.actions.act_window",
-                    "view_mode": "tree,form",
-                    "res_model": model._name,
-                }
-            </field>
-        </record>
 
+        <record id="patient_view_action" model="ir.actions.act_window">
+            <field name="name">Patient</field>
+            <field name="res_model">patient</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+    
     <!-- Menu -->
-        <menuitem name="Patient" id="patient_menu_item" sequence="70" action="patient_action_server"/>
+        <menuitem name="Patient" id="patient_menu_item" sequence="70" action="patient_view_action"/>
 
     </data>
 </odoo>

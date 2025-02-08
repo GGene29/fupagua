@@ -1,4 +1,9 @@
-from odoo import models, fields
+from odoo import models, fields, api
+from datetime import date
+from odoo.exceptions import ValidationError
+
+import logging
+_logger = logging.getLogger(__name__)
 
 class Questionnarie(models.Model):
     _name= 'initial_questionnarie'
@@ -201,6 +206,8 @@ class Questionnarie(models.Model):
         [('0', 'induce'),
         ('1', 'natural')], string='type abortion')
     
+    abortion_observation = fields.Char(string='Observation')
+    
     monitor_pregnancy = fields.Char(string="Since when did you monitor your pregnancy?")
     
     kilos_gain_pregnancy = fields.Integer(string="Kilos gain pregnancy?")
@@ -360,4 +367,4 @@ class Questionnarie(models.Model):
     hurt_deliberately = fields.Text(string='Has he/she ever deliberately hurt himself/herself, for example by biting, hitting or pulling his/her hair?')
     
     other_comments_general = fields.Text(string='Any other comments:')
-    
+      

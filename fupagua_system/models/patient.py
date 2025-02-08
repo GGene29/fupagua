@@ -3,6 +3,7 @@ from odoo import models, fields
 class Patient(models.Model):
     _name='patient'
     _description='registro de pacientes'
+    _rec_name ='name'
     
     create_patient = fields.Date(string="Date Registrion")
     
@@ -13,6 +14,8 @@ class Patient(models.Model):
     date_of_birth = fields.Date(string="Date Birthday")
     
     age = fields.Integer(string='Age')
+    
+    month = fields.Integer(string='Month')
     
     phone = fields.Char(string="Phone")
     

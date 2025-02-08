@@ -163,6 +163,7 @@
                                         <field name="number_pregnancy"/>
                                         <field name="previous_abortion"/>
                                         <field name="type_abortion" attrs="{'invisible':[('previous_abortion','=',False)]}"/>
+                                        <field name="abortion_observation" attrs="{'invisible':[('previous_abortion','=',False)]}"/>
                                     </group>
 
                                     <group col="2">
@@ -299,21 +300,14 @@
         </record>
         
     <!-- Action Server View -->
-        <record model="ir.actions.server" id="initial_questionnarie_action_server">
-            <field name="name">initial_questionnarie_server</field>
-            <field name="model_id" ref="model_initial_questionnarie"/>
-            <field name="state">code</field>
-            <field name="code">
-                action = {
-                    "type": "ir.actions.act_window",
-                    "view_mode": "tree,form",
-                    "res_model": model._name,
-                }
-            </field>
+        <record id="initial_questionnarie_view_action" model="ir.actions.act_window">
+            <field name="name">Initial Questionnaire</field>
+            <field name="res_model">initial_questionnarie</field>
+            <field name="view_mode">tree,form</field>
         </record>
 
     <!-- Menu -->
-        <menuitem name="Initial Questionnarie" id="initial_questionnarie_menu_item" sequence="90" action="initial_questionnarie_action_server"/>
+        <menuitem name="Initial Questionnarie" id="initial_questionnarie_menu_item" sequence="90" action="initial_questionnarie_view_action"/>
 
     </data>
 </odoo>
