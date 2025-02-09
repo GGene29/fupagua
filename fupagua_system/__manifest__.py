@@ -32,6 +32,7 @@
         "views/complication_pregnancy_view.xml",
         "views/habits_pregnancy_view.xml",
         "views/birth_complications_view.xml",
+        "views/illnesses_types_view.xml",
         "views/ir_menu_views.xml",
     ],
     'installable': True,

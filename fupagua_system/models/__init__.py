@@ -8,3 +8,4 @@ from . import services
 from . import complication_pregnancy
 from . import habits_pregnancy
 from . import birth_complications
+from . import illnesses_types

@@ -1,13 +1,13 @@
 from odoo import models, fields, api
 from datetime import date
-from odoo.exceptions import ValidationError
+# from odoo.exceptions import ValidationError
 
 import logging
 _logger = logging.getLogger(__name__)
 
 class Questionnarie(models.Model):
     _name= 'initial_questionnarie'
-    _description = 'Cuestionario Inicial es lo mazimo para poder compartir '
+    _description = 'Cuestionario Inicial realizado al paciente'
     _rec_name = 'patient_id'
     _inherits = {'patient' : 'patient_id' }
     
@@ -284,6 +284,173 @@ class Questionnarie(models.Model):
     
     # VIII Desarrollo Evolutivo 
     
+    # MOTOR
+    
+    holding_head = fields.Char(string='¿Cuándo logró el Control cefálico? - sostener la cabeza')
+    
+    turning_bed = fields.Char(string='¿Cuándo inició el Rolado? - voltearse en la cama ')
+    
+    when_did_crawling = fields.Char(string='¿Cuándo inició Gateo y cómo lo hizo?')
+    
+    sit_up_himself = fields.Char(string='¿Cuándo logró sentarse sólo?:')
+    
+    up_by_himself = fields.Char(string='A qué edad se paro solo:')
+    
+    walk_himself = fields.Char(string='A que edad cominó solo')
+    
+    defend_fall = fields.Char(string='¿Se defendió al caer? ¿Metía las manos o se pegaba en la cara?')
+    
+    unusually_walking = fields.Char(string='¿Hay algo raro en su manera de caminar?')
+    
+    grab_hability = fields.Char(string='¿Tiene habilidad para agarrar las cosas?')
+    
+    pick_objects = fields.Char(string='A qué edad pudo tomar objetos con ambas manos')
+    
+    passing_object = fields.Char(string='A qué edad comenzó a pasarse los objetos de una mano a otra')
+    
+    development_normal = fields.Char(string='¿Usted considera que el desarrollo motor de su hijo se dio de una manera normal o algo retrasado?')
+    
+    movements_persistent = fields.Char(string='¿Presenta algún movimiento persistente, tales como dar vueltas, brincar repetidamente o carreras de un lado a otro?')
+    
+    disorders_motor = fields.Char(string='¿Usted cree que tiene trastornos motores?')
+    
+    been_evaluated = fields.Char(string='¿Ha sido evaluado?')
+    
+    development_difficulties = fields.Char(string='¿Cuándo piensa usted que mostró por primera vez dificultades en su desarrollo motor? ')
+        
+# LENGUAJE
+# start_babbling char
+# syllabifications char
+# first_words 
+# significant_words
+# pronoun
+# simple_commands
+# sequential_commands_two
+# sequential_commands_three
+# simple_answer
+# personal_question
+# complex_questions
+# names_without_help
+# communication_skills
+# pronounces_correctly
+# pronounces_poorly
+# pronounces_very_poorly
+# does_not_understand
+# omission_of_syllables
+# strange_understands
+# invented_words
+# sentence_without_context
+# includes_verbs
+# expression
+# social_participation
+# continues_conversation
+# interests
+# expresses_tastes
+# inappropriate_questions
+# normal_speech
+# repeats_tone
+# spontaneous_gestures
+# facial_expression
+# body_as_extension
+# index_finger
+# eye_contact
+# isolated_words
+# holophrases
+# phrases_meaning_verb
+# sentences
+# adjectives
+# articles
+# articles_and_nouns
+# verb_tenses
+# doubt_of_development
+# language_loss
+# language_impairment
+# lost_ability
+# recovery_time
+
+
+#  AUDICION
+
+# listens_well
+# noisy_toys
+# hears_airplanes
+# hearing_assessment
+# hears_trucks
+# telephone_conversation
+# voices_in_other_room
+# whispered_voices
+# locates_noises
+# has_tinnitus
+# earaches
+# suppuration
+# tolerates_noise
+# speech_behavior
+# responds_to_name
+
+# VISION
+
+# sees_well
+# visual_assessment
+# turns_head
+# looks_at_objects
+# blinks_frequently
+# eyes_stuck_together
+# shadow_play
+# rotating_objects
+# looks_at_it
+
+    
+    # HABITOS ACTIVIDADES
+    
+# void_control
+# daytime_bladder
+# daytime_rectal
+# nighttime_bladder
+# nighttime_rectal
+# takes_a_nap
+# hours_of_nighttime_sleep
+# how_is_his/her_sleep
+# undresses
+# grinds_teeth
+# insists_on_bath
+# bath_alone
+# indicates_how_to_bathe
+# water_temperature
+# dresses_alone
+# chooses_clothes
+# difficulty_with_clothes
+# discomfort_with_clothes
+# bites_nails
+# sucks_thumb
+# uses_pacifier
+# plays_with_unusual_object
+# calming_blanket
+# helps_at_home
+# peer_interaction
+# active_play
+# role_exchange
+# curiosity_with_other_children
+# approaching_child
+# initiates_interaction
+# chooses_friends
+# game_of_clues
+# imitation_of_others
+# particular_object_preference
+# interest_in_senses
+# imaginary_games
+# competitiveness
+# likes_video_games
+# spontaneous_sharing
+# free_behavior
+# reciprocal_act
+# spontaneous_when_greeting
+# reaction_in_approach
+# can_comfort_you
+# interest_in_body_part
+# interferes_with_movement_interest
+# imitates_relatives
+# imitates_similar_exact   
+    
     # IX Accidentes Enfermedades
     
     have_accident = fields.Boolean(string='Have you ever had an accident?')
@@ -302,7 +469,9 @@ class Questionnarie(models.Model):
     
     vaccinations = fields.Char(string='Have you had all your vaccinations:')
     
-    # type_have_illnesses = fields.Many2many('have_illnesses', string='Have you had any of the following illnesses, indicate if they are common')
+    # type_have_illnesses = fields.Many2many('have_illnesses', string='Ha tenido alguna de las siguientes enfermedades')
+    
+    # illnesses_specify = fields.Text(string='Indique que tan comunes son')
     
     other_illnesses = fields.Char(string='Other illness:')
     

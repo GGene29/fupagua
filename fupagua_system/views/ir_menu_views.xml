@@ -34,6 +34,8 @@
 
         <menuitem name="Birth Complication" id="birth_complications_menu_item" action="birth_complications_view_action" parent="questionnaire_supplements_menu" sequence="30"/>
 
+        <menuitem name="Illnesses" id="illnesses_type_menu_item" action="illnesses_type_view_action" parent="questionnaire_supplements_menu" sequence="40"/>
+
 
 
     </data>

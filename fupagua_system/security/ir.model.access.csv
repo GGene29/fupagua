@@ -7,3 +7,4 @@ access_services_fupagua,services_fupagua,model_services,base.group_system,1,1,1,
 access_complication_pregnancy,complication_pregnancy,model_complication_pregnancy,base.group_system,1,1,1,1
 access_habits_pregnancy,habits_pregnancy,model_habits_pregnancy,base.group_system,1,1,1,1
 access_birth_complications,birth_complications,model_birth_complications,base.group_system,1,1,1,1
+access_illnesses,illnesses,model_illnesses,base.group_system,1,1,1,1
