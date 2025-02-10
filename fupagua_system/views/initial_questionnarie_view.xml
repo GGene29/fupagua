@@ -10,8 +10,8 @@
             <field name="arch" type="xml">
                 <tree>
                     <field name="registration_code"/>
-                    <!-- <field name="name"/> -->
-                    <!-- <field name="lastname"/> -->
+                    <field name="name"/>
+                    <field name="lastname"/>
                 
                 </tree>
             </field>
@@ -36,6 +36,7 @@
                                 <field name="name"/>
                                 <field name="lastname"/>
                                 <field name="age"/>
+                                <field name="sex"/>
                                 <field name="identification"/>
                                 <field name="nationality"/>
                                 <field name="address"/>
@@ -54,7 +55,10 @@
                            
                             <page string="FAMILIAR">
                                 <h4>II Motivo de Consulta</h4>
-                                <field name="evaluation_reason"/>
+                                <group>
+                                    <field name="evaluation_reason"/>
+                                    <field name="interview_date"/>
+                                </group>
                                 <group>
                                     <field name="referred"/>
                                     <field name="age_difference"/>
@@ -239,15 +243,203 @@
                                     </group>
                                     <group col="2">
                                         <field name="vaccinations" />
-                                        <!-- <field name="type_have_illnesses" /> -->
+                                        <field name="type_have_illnesses" />
+                                        <field name="illnesses_specify"/>
                                         <field name="other_illnesses" />
                                         <field name="concerns_health" />
                                     </group>
-                                </group>
+                                </group>    
                             </page>
 
                             <page string="DESARROLLO EVOLUTIVO">
-                                <!-- DESAROLLO EVOLUTIVO -->                                
+                                <!-- DESAROLLO EVOLUTIVO -->
+                                <h4>MOTOR</h4>
+                                <group>
+                                    <group col="1">
+                                        <field name="holding_head" />
+                                        <field name="turning_bed" />
+                                        <field name="when_did_crawling" />
+                                        <field name="sit_up_himself"/>
+                                        <field name="up_by_himself"/>
+                                        <field name="walk_himself" />
+                                        <field name="defend_fall" />
+                                        <field name="unusually_walking" />
+                                        <field name="grab_hability" />
+                                        <field name="pick_objects" />
+                                    </group>
+                                    <group col="2">
+                                        <field name="passing_object"/>
+                                        <field name="development_normal" />
+                                        <field name="movements_persistent" />
+                                        <field name="disorders_motor" />
+                                        <field name="been_evaluated" />
+                                        <field name="development_difficulties" />
+                                    </group>
+                                </group>
+
+                                <h4>LENGUAJE</h4>
+                                <group>
+                                    <group col="1">
+                                        <field name="start_babbling" />
+                                        <field name="syllabifications" />
+                                        <field name="first_words" />
+                                        <field name="significant_words" />
+                                        <field name="pronoun" />
+                                        <field name="simple_commands" />
+                                        <field name="sequential_commands_two" />
+                                        <field name="sequential_commands_three" />
+                                        <field name="simple_answer" />
+                                        <field name="personal_question" />
+                                        <field name="complex_questions" />
+                                        <field name="recognizes" />
+                                        <field name="names_without_help" />
+                                        <field name="communication_skills" />
+                                        <field name="pronounces_correctly" />
+                                        <field name="pronounces_poorly" />
+                                        <field name="pronounces_very_poorly" />
+                                        <field name="does_not_understand" />
+                                        <field name="omission_of_syllables" />
+                                        <field name="strange_understands" />
+                                        <field name="invented_words" />
+                                        <field name="sentence_without_context" />
+                                        <field name="includes_verbs" />
+                                        <field name="expression" />
+                                        <field name="social_participation" />
+                                        <field name="continues_conversation" />
+                                        <field name="interests" />
+                                    </group>
+                                    <group col="2">
+                                        <field name="expresses_tastes" />
+                                        <field name="inappropriate_questions" />
+                                        <field name="normal_speech" />
+                                        <field name="repeats_tone" />
+                                        <field name="spontaneous_gestures" />
+                                        <field name="facial_expression" />
+                                        <field name="body_as_extension" />
+                                        <field name="index_finger" />
+                                        <field name="eye_contact" />
+                                        <field name="isolated_words" />
+                                        <field name="holophrases" />
+                                        <field name="phrases_meaning_verb" />
+                                        <field name="sentences" />
+                                        <field name="adjectives" />
+                                        <field name="articles" />
+                                        <field name="articles_and_nouns" />
+                                        <field name="verb_tenses" />
+                                        <field name="doubt_of_development" />
+                                        <field name="language_loss" />
+                                        <field name="language_impairment" />
+                                        <field name="lost_ability" />
+                                        <field name="recovery_time" />
+                                    </group>
+                                </group>
+
+                                <h4>AUDICION</h4>                                                                
+                                <group>
+                                    <group col="1">
+                                        <field name="listens_well" />
+                                        <field name="noisy_toys" />
+                                        <field name="hears_airplanes" />
+                                        <field name="hearing_assessment" />
+                                        <field name="hears_trucks" />
+                                        <field name="telephone_conversation" />
+                                        <field name="voices_in_other_room" />
+                                        <field name="whispered_voices" />
+                                        <field name="locates_noises" />
+                                    </group>
+                                    <group col="2">
+                                        <field name="has_tinnitus" />
+                                        <field name="earaches" />
+                                        <field name="suppuration" />
+                                        <field name="tolerates_noise" />
+                                        <field name="speech_behavior" />
+                                        <field name="responds_to_name" />
+                                    </group>
+                                    
+                                </group>
+
+                                <h4>VISION</h4>
+                                <group>
+                                    <group col="1">
+                                        <field name="sees_well" />
+                                        <field name="visual_assessment" />
+                                        <field name="turns_head" />
+                                        <field name="looks_at_objects" />
+                                        <field name="blinks_frequently" />
+                                    </group>
+                                    <group col="2">
+                                        <field name="eyes_stuck_together" />
+                                        <field name="shadow_play" />
+                                        <field name="rotating_objects" />
+                                        <field name="looks_at_it" />
+                                    </group>
+                                    
+                                </group>
+
+                                <h4>HABITOS ACTIVIDADES</h4>
+                                <group>
+                                    <group col="1">
+                                        <field name="void_control" />
+                                        <field name="daytime_bladder" />
+                                        <field name="daytime_rectal" />
+                                        <field name="nighttime_bladder" />
+                                        <field name="nighttime_rectal" />
+                                        <field name="takes_a_nap" />
+                                        <field name="hours_of_nighttime_sleep" />
+                                        <field name="how_is_his_her_sleep" />
+                                        <field name="undresses" />
+                                        <field name="grinds_teeth" />
+                                        <field name="insists_on_bath" />
+                                        <field name="bath_alone" />
+                                        <field name="indicates_how_to_bathe" />
+                                        <field name="water_temperature" />
+                                        <field name="dresses_alone" />
+                                        <field name="chooses_clothes" />
+                                        <field name="difficulty_with_clothes" />
+                                        <field name="discomfort_with_clothes" />
+                                        <field name="bites_nails" />
+                                        <field name="sucks_thumb" />
+                                        <field name="uses_pacifier" />
+                                        <field name="plays_with_unusual_object" />
+                                        <field name="calming_blanket" />
+                                        <field name="helps_at_home" />
+                                        <field name="peer_interaction" />
+                                        <field name="active_play" />
+                                        <field name="role_exchange" />
+                                        <field name="curiosity_with_other_children" />
+                                        <field name="approaching_child" />
+                                        <field name="initiates_interaction" />
+                                        <field name="chooses_friends" />
+                                        <field name="game_of_clues" />
+                                    </group>
+                                    <group col="2">
+                                        <field name="imitation_of_others" />
+                                        <field name="particular_object_preference" />
+                                        <field name="interest_in_senses" />
+                                        <field name="imaginary_games" />
+                                        <field name="competitiveness" />
+                                        <field name="likes_video_games" />
+                                        <field name="spontaneous_sharing" />
+                                        <field name="free_behavior" />
+                                        <field name="reciprocal_act" />
+                                        <field name="spontaneous_when_greeting" />
+                                        <field name="reaction_in_approach" />
+                                        <field name="can_comfort_you" />
+                                        <field name="interest_in_body_part" />
+                                        <field name="interferes_with_movement_interest" />
+                                        <field name="imitates_relatives" />
+                                        <field name="imitates_similar_exact" />
+                                    </group>
+                                    
+                                </group>        
+
+
+                                    <!-- <field name="" /> -->
+                                    <!-- <field name="" /> -->
+                                    <!-- <field name="" /> -->
+                                    <!-- <field name="" /> -->
+                                    <!-- <field name="" /> -->
+                                    <!-- <field name="" /> -->
                             
                             </page>
 

@@ -21,9 +21,9 @@ class Questionnarie(models.Model):
     
     nationality = fields.Selection([
         ('1', 'Venezolano'),
-        ('2', 'Extranjero')], string='Nationality', default='1', required='1')
+        ('2', 'Extranjero')], string='Nationality', default='')
     
-    place_of_birth = fields.Char(string='Plance of birthday' , required='1')
+    place_of_birth = fields.Char(string='Plance of birthday')
         
     schooling = fields.Selection([
         ('0', 'Inicial'),
@@ -34,15 +34,17 @@ class Questionnarie(models.Model):
     
     origins = fields.Char(string='Origins')
     
-    address = fields.Char(string='Address',required='1')
+    address = fields.Char(string='Address')
     
-    provider_by = fields.Char(string='Data Provider By', required='1')
+    provider_by = fields.Char(string='Data Provider By')
     
-    relationship = fields.Char(string='Kinship relationship with the evaluated', required='1')
+    relationship = fields.Char(string='Kinship relationship with the evaluated')
     
     # Parte II Motivo Consulta
     
     referred = fields.Char(string='Referred by') 
+    
+    interview_date = fields.Date(string='Fecha de la entrevista')
     
     evaluation_reason = fields.Text(string='evaluation_reason')
     
@@ -319,137 +321,254 @@ class Questionnarie(models.Model):
     development_difficulties = fields.Char(string='¿Cuándo piensa usted que mostró por primera vez dificultades en su desarrollo motor? ')
         
 # LENGUAJE
-# start_babbling char
-# syllabifications char
-# first_words 
-# significant_words
-# pronoun
-# simple_commands
-# sequential_commands_two
-# sequential_commands_three
-# simple_answer
-# personal_question
-# complex_questions
-# names_without_help
-# communication_skills
-# pronounces_correctly
-# pronounces_poorly
-# pronounces_very_poorly
-# does_not_understand
-# omission_of_syllables
-# strange_understands
-# invented_words
-# sentence_without_context
-# includes_verbs
-# expression
-# social_participation
-# continues_conversation
-# interests
-# expresses_tastes
-# inappropriate_questions
-# normal_speech
-# repeats_tone
-# spontaneous_gestures
-# facial_expression
-# body_as_extension
-# index_finger
-# eye_contact
-# isolated_words
-# holophrases
-# phrases_meaning_verb
-# sentences
-# adjectives
-# articles
-# articles_and_nouns
-# verb_tenses
-# doubt_of_development
-# language_loss
-# language_impairment
-# lost_ability
-# recovery_time
+    
+    start_babbling = fields.Char(string='Cuando inició el Balbuceo:')
+    
+    syllabifications = fields.Char(string='Cuando inició las Silabaciones:')
+    
+    first_words = fields.Char(string='Cuando dijo las primeras Palabras sin significado (cuales):')
+    
+    significant_words = fields.Char(string='Cuando dijo las primeras Palabras con significado')
+    
+    pronoun = fields.Char(string='Cuando inició el Uso del pronombre "YO"')
+    
+    simple_commands = fields.Text(string='¿Comprende órdenes simples?')
+    
+    sequential_commands_two = fields.Text(string='¿Comprende órdenes en secuencias de 2?')
+    
+    sequential_commands_three = fields.Text(string='¿Comprende órdenes en secuencias de 3?')
+    
+    simple_answer = fields.Text(string='¿Responde preguntas simples con un sí o un no? Explique')
+    
+    personal_question = fields.Text(string='¿Responde preguntas personales? Explique')
+    
+    complex_questions = fields.Text(string='¿Responde preguntas complejas? Explique')
+    
+    recognizes = fields.Text(string='Cosas que RECONOCE:')
+    
+    names_without_help = fields.Text(string='NOMBRA SIN AYUDA a través de señas, gestos, Claves Visuales o palabras - indique cuál utiliza y ejemplos:')
+    
+    communication_skills = fields.Text(string='En su COMUNICACIÓN es capaz de: - señale si lo hace con palabras, gestos o claves visuales:')
+    
+    pronounces_correctly = fields.Char(string='Pronuncia Corecctamente')
+    
+    pronounces_poorly = fields.Char(string='Con pocos errores:')
+    
+    pronounces_very_poorly = fields.Char(string='Con muchos errores')
+    
+    does_not_understand = fields.Char(string='No se entiende')
+    
+    omission_of_syllables = fields.Char(string='Uso de sílabas')
+    
+    strange_understands = fields.Char(string='¿Las personas fuera de la familia entienden perfectamente lo que pronuncia?')
+    
+    invented_words = fields.Text(string='¿Alguna vez ha utilizado palabras o frases que pareciera haber inventado él mismo? (b) De algún ejemplo: ')
+    
+    sentence_without_context = fields.Text(string='Tendencia de frases raras o repetir frase fuera de contexto')
+    
+    includes_verbs = fields.Text(string='¿Diariamente emplea frases que por lo menos incluyan un verbo y que sean comprendidas por otras personas?')
+    
+    expression = fields.Text(string='¿Existe alguna expresión que diga una y otra vez exactamente igual o insiste en que usted lo diga?(c) Si es así, que sucede si lo interrumpen o se niega a contestar.')
+    
+    social_participation = fields.Text(string='Cuando la gente habla, ¿él o ella participa en la conversación para ser amistoso o sociable o sólo interviene para obtener o saber algo? ')
+    
+    continues_conversation = fields.Text(string='¿Es capaz de continuar el hilo de la conversación? (b) ¿Sus conversaciones tienen intereses variados o las utiliza en diferentes contextos? ')
+    
+    interests = fields.Text(string='¿En algún momento le muestra cosas que a ella o a él le interesan, sin ningún motivo aparte de compartir sus intereses?')
+    
+    expresses_tastes = fields.Text(string='¿Él o ella muestra intenciones de hacerle partícipe de lo que le gusta, sin más interés que expresar su placer?')
+    
+    inappropriate_questions = fields.Text(string='¿En ocasiones hace preguntas o dice cosas socialmente inadecuadas? ')
+    
+    normal_speech = fields.Text(string='¿Su habla tiene un volumen, ritmo y velocidad normal?')
+    
+    repeats_tone = fields.Text(string='¿Alguna vez repite palabras, frases u oraciones enteras en el mismo tono de voz que lo escuchó la primera vez?')
+    
+    spontaneous_gestures = fields.Text(string='¿Utiliza espontáneamente y de manera apropiada gestos comunes?')
+    
+    facial_expression = fields.Text(string='¿Muestra expresiones faciales en la interacción con otras personas?¿según la situación?')
+    
+    body_as_extension = fields.Text(string='¿Lo lleva de la mano, muñeca o alguna parte del cuerpo hacia un objeto que desee? (a) ¿lo hace como si la parte de su cuerpo fuese una herramienta o extensión de su propio brazo?')
+    
+    index_finger = fields.Text(string='Señala con el dedo índice lo que quiere o lo hace con la mano extendida:')
+    
+    eye_contact = fields.Text(string='Cuando señala lo que quiere ¿usa el contacto visual hacia lo que desea?')
+    
+    isolated_words = fields.Text(string=' Usa solo palabras aisladas:')
+    
+    holophrases = fields.Text(string='Usa holofrases (palabras que significan una frase completa):')
+    
+    phrases_meaning_verb = fields.Text(string='Cuando comenzó a utilizar frases de 2-3 palabras con sentido que incluyan un verbo')
+    
+    sentences = fields.Text(string='Usa oraciones:')
+    
+    adjectives = fields.Text(string='Usa adjetivos:')
+    
+    articles = fields.Text(string='Usa artículos')
+    
+    articles_and_nouns = fields.Text(string='Concordancia entre artículos y sustantivos:')
+    
+    verb_tenses = fields.Text(string='Conjuga bien los tiempos verbales')
+    
+    doubt_of_development = fields.Text(string='¿Qué edad tenía él o ella cuando usted se preguntó por primera vez si algo no estaba bien en el desarrollo del lenguaje, relaciones o comportamiento?')
+    
+    language_loss = fields.Text(string='¿Alguna vez le preocupó que su hijo o hija pudiera haber perdido el lenguaje después de haber aprendido a hablar? ¿Cuánto lenguaje había adquirido antes de perderlo? (Descríbalo)')
+    
+    language_impairment = fields.Text(string='¿Tuvo alguna enfermedad física en el momento en que empezó a perder el lenguaje?')
+    
+    lost_ability = fields.Text(string='¿Hubo alguna otra habilidad que haya perdido al mismo tiempo que sus habilidades en el lenguaje? ¿Cuáles?')
+    
+    recovery_time = fields.Text(string='¿Cuánto tiempo pasó hasta que empezó a recuperarlas?')
+   
+    #  AUDICION
 
-
-#  AUDICION
-
-# listens_well
-# noisy_toys
-# hears_airplanes
-# hearing_assessment
-# hears_trucks
-# telephone_conversation
-# voices_in_other_room
-# whispered_voices
-# locates_noises
-# has_tinnitus
-# earaches
-# suppuration
-# tolerates_noise
-# speech_behavior
-# responds_to_name
+    listens_well = fields.Char(string='Oye bien')
+    
+    noisy_toys = fields.Char(string='Juguetes sonoros')
+    
+    hears_airplanes = fields.Char(string='Oye aviones')
+    
+    hearing_assessment = fields.Char(string='Evaluaciones auditivas')
+    
+    hears_trucks = fields.Char(string='Oye camiones')
+    
+    telephone_conversation = fields.Char(string='Oye conversaciones')
+    
+    voices_in_other_room = fields.Char(string='Oye conversaciones telefónicas')
+    
+    whispered_voices = fields.Char(string='Oye voces cuchicheadas')
+    
+    locates_noises = fields.Char(string='Ubica los ruidos que oye')
+    
+    has_tinnitus = fields.Char(string='Presenta tinitus')
+    
+    earaches = fields.Char(string='Presenta frecuentemente dolor de oído')
+    
+    suppuration = fields.Char(string='Presenta frecuentemente supuración')
+    
+    tolerates_noise = fields.Char(string='Tolera el ruido')
+    
+    speech_behavior = fields.Text(string='Si usted entra en una habitación y empieza hablar sin llamarle por su nombre, ¿qué hace?')
+    
+    responds_to_name = fields.Char(string='Responde a su nombre')
 
 # VISION
-
-# sees_well
-# visual_assessment
-# turns_head
-# looks_at_objects
-# blinks_frequently
-# eyes_stuck_together
-# shadow_play
-# rotating_objects
-# looks_at_it
-
+    
+    sees_well = fields.Char(string='Ve bien:')
+    
+    visual_assessment = fields.Char(string='Evaluaciones de la vista')
+    
+    turns_head = fields.Char(string='Gira la cabeza para enfocar')
+    
+    looks_at_objects = fields.Char(string='Se acerca o leja para mirar')
+    
+    blinks_frequently = fields.Char(string='Parpadea con frecuencia')
+    
+    eyes_stuck_together = fields.Char(string='Amanece con los ojos pegados')
+    
+    shadow_play = fields.Char(string='Juega con sombras')
+    
+    rotating_objects = fields.Char(string='Tiene un interés particular por mirar los objetos que giran:')
+    
+    looks_at_it = fields.Text(string='¿Le mira directamente a la cara cuando le habla?')
     
     # HABITOS ACTIVIDADES
     
-# void_control
-# daytime_bladder
-# daytime_rectal
-# nighttime_bladder
-# nighttime_rectal
-# takes_a_nap
-# hours_of_nighttime_sleep
-# how_is_his/her_sleep
-# undresses
-# grinds_teeth
-# insists_on_bath
-# bath_alone
-# indicates_how_to_bathe
-# water_temperature
-# dresses_alone
-# chooses_clothes
-# difficulty_with_clothes
-# discomfort_with_clothes
-# bites_nails
-# sucks_thumb
-# uses_pacifier
-# plays_with_unusual_object
-# calming_blanket
-# helps_at_home
-# peer_interaction
-# active_play
-# role_exchange
-# curiosity_with_other_children
-# approaching_child
-# initiates_interaction
-# chooses_friends
-# game_of_clues
-# imitation_of_others
-# particular_object_preference
-# interest_in_senses
-# imaginary_games
-# competitiveness
-# likes_video_games
-# spontaneous_sharing
-# free_behavior
-# reciprocal_act
-# spontaneous_when_greeting
-# reaction_in_approach
-# can_comfort_you
-# interest_in_body_part
-# interferes_with_movement_interest
-# imitates_relatives
-# imitates_similar_exact   
+    void_control = fields.Char(string='A qué edad controló los efínteres')
+    
+    daytime_bladder = fields.Char(string='Vesicañ diurno')
+    
+    daytime_rectal = fields.Char(string='Rectal diurno')
+    
+    nighttime_bladder = fields.Char(string='Vesical nocturno')
+    
+    nighttime_rectal = fields.Char(string='Rectal nocturno')
+    
+    takes_a_nap = fields.Char(string='Duerme siesta')
+    
+    hours_of_nighttime_sleep = fields.Char(string='Cuantas horas duerme de noche')
+    
+    how_is_his_her_sleep = fields.Char(string='Cómo es su sueño')
+    
+    undresses = fields.Char(string='Se desarropa en la noche')
+    
+    grinds_teeth = fields.Char(string='Habla o cruje los dientes al dormir')
+    
+    insists_on_bath = fields.Char(string='Hay que insistir para que se bañe')
+    
+    bath_alone = fields.Char(string='Se baña solo')
+    
+    indicates_how_to_bathe = fields.Char(string='Requiere que le digan cómo bañarse')
+    
+    water_temperature = fields.Char(string='Le molesta o prefiere alguna temperatura del agua')
+    
+    dresses_alone = fields.Char(string='Se viste solo')
+    
+    chooses_clothes = fields.Char(string='Escoge su ropa')
+    
+    difficulty_with_clothes = fields.Char(string='Dificultad al usar alguna prenda de vestir')
+    
+    discomfort_with_clothes = fields.Char(string='Le molesta alguna prenda en particular')
+    
+    bites_nails = fields.Char(string='Se come las uñas')
+    
+    sucks_thumb = fields.Char(string='Chupa su dedo')
+    
+    uses_pacifier = fields.Char(string='Utiliza chupon')
+    
+    plays_with_unusual_object = fields.Char(string='Juega con algún objeto inusual')
+    
+    calming_blanket = fields.Char(string='Tiene alguna cobija o almohada como tranquilizante')
+    
+    helps_at_home = fields.Char(string='Colabora con labores del hogar voluntariamente o como parte de sus obligaciones (cuales):')
+    
+    peer_interaction = fields.Char(string='¿Interactúa en el juego con iguales?')
+    
+    active_play = fields.Char(string='¿Juega activamente con ellos o sólo a su lado?')
+    
+    role_exchange = fields.Char(string='¿Puede intercambiar los roles en el juego?')
+    
+    curiosity_with_other_children = fields.Char(string='¿Le llama la atención lo que hacen otros niños de su edad?')
+    
+    approaching_child = fields.Char(string='¿Qué hace si otro niño se le acerca?')
+    
+    initiates_interaction = fields.Char(string='¿Inicia él la interacción?')
+    
+    chooses_friends = fields.Char(string='¿Escoge a sus amigos?')
+    
+    game_of_clues = fields.Char(string='¿Participa o participaba con adultos conocidos en juegos, de pistas, topitos o esconderse detrás de la cobija?')
+    
+    imitation_of_others = fields.Char(string='¿Participa en juegos de imitación con otros niños que no sean sus hermanos? ')
+    
+    particular_object_preference = fields.Char(string='¿Cuándo juega prefiere algún objeto o parte de un objeto en particular o lo hacen de una manera rutinaria?')
+    
+    interest_in_senses = fields.Char(string='¿Tiene algún interés particular en el tacto, olfato, gusto, hacia las comidas, objetos o juguetes?')
+    
+    imaginary_games = fields.Text(string='¿Realiza Juegos simbólicos o de imaginación? explique frecuencia')
+    
+    competitiveness = fields.Char(string='¿Participa en Juegos competitivos?')
+    
+    likes_video_games = fields.Char(string='¿Les gustan los videos juegos?')
+    
+    spontaneous_sharing = fields.Text(string='¿Es capaz de compartir de manera espontánea su juguete o comida? (a) ¿lo hace si se lo piden?')
+    
+    free_behavior = fields.Text(string='Si lo dejas hacer lo que quiere, ¿qué tipo de cosas hace?')
+    
+    reciprocal_act = fields.Text(string='¿Devuelve la sonrisa cuando alguien le sonríe o sonríe cuando alguien conocido se le acerca de manera recíproca?')
+    
+    spontaneous_when_greeting = fields.Text(string='¿Puede sonreír espontáneamente para saludar?')
+    
+    reaction_in_approach = fields.Text(string='¿Cómo reacciona cuando un adulto familiar o amistades se le acerca y le habla o trata de atraer su atención?')
+    
+    can_comfort_you = fields.Text(string='¿Trata de consolarle si usted está triste, herido o enfermo?')
+    
+    interest_in_body_part = fields.Text(string='Interés peculiar, raro e inusual en su intensidad. Movimiento de mano u otra parte del cuerpo ¿Qué pasa si lo detienen?')
+    
+    interferes_with_movement_interest = fields.Text(string='¿Estos movimientos o este interés interfieren en las generales del día?')
+    
+    imitates_relatives = fields.Text(string='¿Es capaz de imitarlo imitar a otros miembros de la familia?')
+    
+    imitates_similar_exact = fields.Text(string='¿Lo imita de manera inmediata o lo puede hacer en otro momento?')
     
     # IX Accidentes Enfermedades
     
@@ -469,9 +588,9 @@ class Questionnarie(models.Model):
     
     vaccinations = fields.Char(string='Have you had all your vaccinations:')
     
-    # type_have_illnesses = fields.Many2many('have_illnesses', string='Ha tenido alguna de las siguientes enfermedades')
+    type_have_illnesses = fields.Many2many('illnesses', string='Ha tenido alguna de las siguientes enfermedades')
     
-    # illnesses_specify = fields.Text(string='Indique que tan comunes son')
+    illnesses_specify = fields.Text(string='Indique que tan comunes son:')
     
     other_illnesses = fields.Char(string='Other illness:')
     
