@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="coffee_habit" model="habits_pregnancy">
+            <field name="name">Cafe</field>
+        </record>
+
+        <record id="cigarette_habit" model="habits_pregnancy">
+            <field name="name">Cigarros</field>
+        </record>
+
+        <record id="alcohol_habit" model="habits_pregnancy">
+            <field name="name">Alcohol</field>
+        </record>
+
+        <record id="drug_habit" model="habits_pregnancy">
+            <field name="name">Drogas</field>
+        </record>
+
+        <record id="medication_habit" model="habits_pregnancy">
+            <field name="name">Medicamentos</field>
+        </record>
+    </data>
+</odoo>

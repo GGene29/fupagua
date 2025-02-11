@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <data>
+
+    <!-- View Tree -->
+        <record model="ir.ui.view" id="initial_questionnarie_view">
+            <field name="name">initial questionnarie</field>    
+            <field name="model">initial_questionnarie</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="registration_code"/>
+                    <field name="name"/>
+                    <field name="lastname"/>
+                
+                </tree>
+            </field>
+        </record>
+
+    <!-- View Form -->
+        <record model="ir.ui.view" id="initial_questionnarie_form">
+            <field name="name">Initial Questionnarie</field>    
+            <field name="model">initial_questionnarie</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <h2>CUESTIONARIO INICIAL</h2>
+                        <h3>ENTREVISTA MÉDICO, EDUCATIVO, SOCIAL Y FAMILIAR</h3>
+                        <group>
+                            <field name="registration_code"/>
+                            <!-- <field name="patient_id"/> -->
+                            <field name="create_date"/>
+                        </group>
+                        <group>
+                            <group col="1"> 
+                                <field name="name"/>
+                                <field name="lastname"/>
+                                <field name="age"/>
+                                <field name="sex"/>
+                                <field name="identification"/>
+                                <field name="nationality"/>
+                                <field name="address"/>
+                            </group>
+                            <group col="2">
+                                <field name="date_of_birth"/>
+                                <field name="place_of_birth"/>
+                                <field name="institution"/>
+                                <field name="origins"/>
+                                <field name="phone"/>
+                                <field name="provider_by"/>
+                                <field name="relationship"/>
+                            </group>
+                        </group>
+                        <notebook>
+                           
+                            <page string="FAMILIAR">
+                                <h4>II Motivo de Consulta</h4>
+                                <group>
+                                    <field name="evaluation_reason"/>
+                                    <field name="interview_date"/>
+                                </group>
+                                <group>
+                                    <field name="referred"/>
+                                    <field name="age_difference"/>
+                                    <field name="difference_description"/>
+                                    <field name="diagnosis_examination"/>
+                                    <field name="treatment_evolution"/>
+                                </group>
+
+                                <h4>III Familiar</h4>
+                                <group>
+                                    <field name="biological_parents_charge" />
+                                </group>
+                                <!-- Biological Parents -->
+                                <group attrs="{'invisible':[('biological_parents_charge','=',False)]}">
+                                    <group col="1">
+                                        <field name="mother_name" />
+                                        <field name="mother_age" />
+                                        <field name="mother_nationality" />
+                                        <field name="mother_nif" />
+                                        <field name="mother_educational" />
+                                        <field name="mother_occupation" />
+                                        <field name="mother_work" />
+                                        <field name="mother_salary" />
+                                        <field name="mother_support" />
+                                        <field name="mother_status" />
+                                        <field name="mother_phone" />
+                                        <field name="mother_address" />
+                                        <field name="mother_relationship" />
+                                        <field name="opinion_behavior_mother" />
+                                    </group>
+                                    <group col="2">
+                                        <field name="father_name" />
+                                        <field name="father_age" />
+                                        <field name="father_nationality" />
+                                        <field name="father_nif" />
+                                        <field name="father_educational" />
+                                        <field name="father_occupation" />
+                                        <field name="father_work" />
+                                        <field name="father_salary" />
+                                        <field name="father_support" />
+                                        <field name="father_status" />
+                                        <field name="father_phone" />
+                                        <field name="father_address" />
+                                        <field name="father_relationship" />
+                                        <field name="opinion_behavior_father" />
+                                    </group>
+                                    
+                                </group>
+                                <!-- Caragiver -->
+                                <group attrs="{'invisible':[('biological_parents_charge','=',True)]}">
+                                    <group col="1">
+                                        <field name="caragiver" />
+                                        <field name="name_caragiver" />
+                                        <field name="caragiver_age" />
+                                        <field name="caragiver_nationality" />
+                                        <field name="caragiver_id" />
+                                        <field name="caragiver_educational" />
+                                        <field name="caragiver_occupation" />                                        
+                                    </group>
+                                    <group col="2">
+                                        <field name="caragiver_work_schedule" />
+                                        <field name="caragiver_salary" />
+                                        <field name="caragiver_support" />
+                                        <field name="caragiver_status" />
+                                        <field name="caragiver_phone" />
+                                        <field name="caragiver_relationship" />
+                                        <field name="opinion_behavior_caragiver" />
+                                    </group>
+                                </group>
+                                <!-- Información general Familiar -->
+                                <h5>Información General Familiar</h5>
+                                <group>
+                                    <group col="1">
+                                        <field name="family_dynamics"/>
+                                        <field name="family_relationship"/>
+                                        <field name="another_need_help"/>
+                                        <field name="bioligical_condition"/>
+                                        <field name="family_condition"/>
+                                        <field name="adopted_child"/>
+                                    </group>
+                                    <group col="2" attrs="{'invisible':[('adopted_child','=',False)]}">
+                                        <field name="adoption_age"/>
+                                        <field name="adoption_agreement"/>
+                                        <field name="knows_adopted"/>
+                                        <field name="reaction_adopted_family"/>
+                                    </group>    
+                                </group>
+                                <!-- Datos Socioeconómicos -->
+                                <h4> IV Datos Socioeconómicos </h4>
+                                <group>
+                                    <field name="type_housing"/>
+                                    <field name="describe_coexistence"/>
+                                </group>
+                            </page>
+
+                            <page string="GESTACIÓN">
+                                <h4> V Antecedentes</h4>
+                                <group>
+                                    <group col="1">
+                                        <field name="planned_pregnancy"/>
+                                        <field name="desired_child"/>
+                                        <field name="was_desired"/>
+                                        <field name="abortion_attempt" attrs="{'invisible':[('desired_child','=',True)]}"/>
+                                        <field name="desired_child_sex"/>
+                                        <field name="pregnancy_attitude"/>
+                                        <field name="number_pregnancy"/>
+                                        <field name="previous_abortion"/>
+                                        <field name="type_abortion" attrs="{'invisible':[('previous_abortion','=',False)]}"/>
+                                        <field name="abortion_observation" attrs="{'invisible':[('previous_abortion','=',False)]}"/>
+                                    </group>
+
+                                    <group col="2">
+                                        <field name="monitor_pregnancy" />
+                                        <field name="kilos_gain_pregnancy" />
+                                        <field name="pregnancy_type_complication"/>
+                                        <field name="period_pregnancy" />                                    
+                                        <field name="other_complication"/>
+                                        <field name="type_habits_pregnancy"/>
+                                        <field name="habits_others"/>
+                                    </group>
+                                </group>
+                                <h4> VI Nacimiento</h4>
+                                <group>
+                                    <group col="1">
+                                        <field name="age_mother_delivery"/>
+                                        <field name="type_delivery"/>
+                                        <field name="weeks_gestation"/>
+                                        <field name="cause_cesarean" attrs="{'invisible':[('type_delivery','=','2')]}"/>
+                                        <field name="length_labor" attrs="{'invisible':[('type_delivery','=','1')]}"/>
+                                        <field name="presentation_newborn" attrs="{'invisible':[('type_delivery','=','1')]}"/>
+                                        <field name="forceps_required" attrs="{'invisible':[('type_delivery','=','1')]}"/>
+                                        <field name="anesthesia_required" attrs="{'invisible':[('type_delivery','=','1')]}"/>
+                                    </group>
+
+                                    <group col="2">
+                                        <field name="birth_weigth"/>
+                                        <field name="birth_heigth"/>
+                                        <field name="normal_breathing"/>
+                                        <field name="spontaneous_crying" />
+                                        <field name="birth_complications_type"/>
+                                        <field name="another_birth_complication"/>
+                                    </group>
+                                </group>
+
+                            </page>
+
+                            <page string="MÉDICO">
+                                <!-- ALIMENTACIÖN VII -->
+                                <h4>VII Alimentación</h4>
+                                <group>
+                                    <group col="1">
+                                        <field name="exclusive_breatfeeding"/>
+                                        <field name="age_combine_formula"/>
+                                        <field name="specify_formulas"/>
+                                        <field name="breatfeeding_discontinued"/>
+                                        <field name="semisolids_which"/>
+                                        <field name="solids_which"/>
+                                    </group>
+
+                                    <group col="2">
+                                        <field name="current_diet"/>
+                                        <field name="selective_foods"/>
+                                        <field name="specify_like_dislike"/>
+                                        <field name="intolerance"/>
+                                        <field name="specify_intolerance"/>
+                                        <field name="eats_alone"/>
+                                        <field name="down_eats"/>
+                                    
+                                    </group>
+                                </group>
+
+                                <h4>IX Accidentes o Enfermedades</h4>
+                                <group>
+                                    <group col="1">
+                                        <field name="have_accident" />
+                                        <field name="what_type" />
+                                        <field name="needed_operation" />
+                                        <field name="type_operation" />
+                                        <field name="receiving_medication" />
+                                        <field name="treating_physician" />
+                                        <field name="pediatrician_monitors" />
+                                    </group>
+                                    <group col="2">
+                                        <field name="vaccinations" />
+                                        <field name="type_have_illnesses" />
+                                        <field name="illnesses_specify"/>
+                                        <field name="other_illnesses" />
+                                        <field name="concerns_health" />
+                                    </group>
+                                </group>    
+                            </page>
+
+                            <page string="DESARROLLO EVOLUTIVO">
+                                <!-- DESAROLLO EVOLUTIVO -->
+                                <h4>MOTOR</h4>
+                                <group>
+                                    <group col="1">
+                                        <field name="holding_head" />
+                                        <field name="turning_bed" />
+                                        <field name="when_did_crawling" />
+                                        <field name="sit_up_himself"/>
+                                        <field name="up_by_himself"/>
+                                        <field name="walk_himself" />
+                                        <field name="defend_fall" />
+                                        <field name="unusually_walking" />
+                                        <field name="grab_hability" />
+                                        <field name="pick_objects" />
+                                    </group>
+                                    <group col="2">
+                                        <field name="passing_object"/>
+                                        <field name="development_normal" />
+                                        <field name="movements_persistent" />
+                                        <field name="disorders_motor" />
+                                        <field name="been_evaluated" />
+                                        <field name="development_difficulties" />
+                                    </group>
+                                </group>
+
+                                <h4>LENGUAJE</h4>
+                                <group>
+                                    <group col="1">
+                                        <field name="start_babbling" />
+                                        <field name="syllabifications" />
+                                        <field name="first_words" />
+                                        <field name="significant_words" />
+                                        <field name="pronoun" />
+                                        <field name="simple_commands" />
+                                        <field name="sequential_commands_two" />
+                                        <field name="sequential_commands_three" />
+                                        <field name="simple_answer" />
+                                        <field name="personal_question" />
+                                        <field name="complex_questions" />
+                                        <field name="recognizes" />
+                                        <field name="names_without_help" />
+                                        <field name="communication_skills" />
+                                        <field name="pronounces_correctly" />
+                                        <field name="pronounces_poorly" />
+                                        <field name="pronounces_very_poorly" />
+                                        <field name="does_not_understand" />
+                                        <field name="omission_of_syllables" />
+                                        <field name="strange_understands" />
+                                        <field name="invented_words" />
+                                        <field name="sentence_without_context" />
+                                        <field name="includes_verbs" />
+                                        <field name="expression" />
+                                        <field name="social_participation" />
+                                        <field name="continues_conversation" />
+                                        <field name="interests" />
+                                    </group>
+                                    <group col="2">
+                                        <field name="expresses_tastes" />
+                                        <field name="inappropriate_questions" />
+                                        <field name="normal_speech" />
+                                        <field name="repeats_tone" />
+                                        <field name="spontaneous_gestures" />
+                                        <field name="facial_expression" />
+                                        <field name="body_as_extension" />
+                                        <field name="index_finger" />
+                                        <field name="eye_contact" />
+                                        <field name="isolated_words" />
+                                        <field name="holophrases" />
+                                        <field name="phrases_meaning_verb" />
+                                        <field name="sentences" />
+                                        <field name="adjectives" />
+                                        <field name="articles" />
+                                        <field name="articles_and_nouns" />
+                                        <field name="verb_tenses" />
+                                        <field name="doubt_of_development" />
+                                        <field name="language_loss" />
+                                        <field name="language_impairment" />
+                                        <field name="lost_ability" />
+                                        <field name="recovery_time" />
+                                    </group>
+                                </group>
+
+                                <h4>AUDICION</h4>                                                                
+                                <group>
+                                    <group col="1">
+                                        <field name="listens_well" />
+                                        <field name="noisy_toys" />
+                                        <field name="hears_airplanes" />
+                                        <field name="hearing_assessment" />
+                                        <field name="hears_trucks" />
+                                        <field name="telephone_conversation" />
+                                        <field name="voices_in_other_room" />
+                                        <field name="whispered_voices" />
+                                        <field name="locates_noises" />
+                                    </group>
+                                    <group col="2">
+                                        <field name="has_tinnitus" />
+                                        <field name="earaches" />
+                                        <field name="suppuration" />
+                                        <field name="tolerates_noise" />
+                                        <field name="speech_behavior" />
+                                        <field name="responds_to_name" />
+                                    </group>
+                                    
+                                </group>
+
+                                <h4>VISION</h4>
+                                <group>
+                                    <group col="1">
+                                        <field name="sees_well" />
+                                        <field name="visual_assessment" />
+                                        <field name="turns_head" />
+                                        <field name="looks_at_objects" />
+                                        <field name="blinks_frequently" />
+                                    </group>
+                                    <group col="2">
+                                        <field name="eyes_stuck_together" />
+                                        <field name="shadow_play" />
+                                        <field name="rotating_objects" />
+                                        <field name="looks_at_it" />
+                                    </group>
+                                    
+                                </group>
+
+                                <h4>HABITOS ACTIVIDADES</h4>
+                                <group>
+                                    <group col="1">
+                                        <field name="void_control" />
+                                        <field name="daytime_bladder" />
+                                        <field name="daytime_rectal" />
+                                        <field name="nighttime_bladder" />
+                                        <field name="nighttime_rectal" />
+                                        <field name="takes_a_nap" />
+                                        <field name="hours_of_nighttime_sleep" />
+                                        <field name="how_is_his_her_sleep" />
+                                        <field name="undresses" />
+                                        <field name="grinds_teeth" />
+                                        <field name="insists_on_bath" />
+                                        <field name="bath_alone" />
+                                        <field name="indicates_how_to_bathe" />
+                                        <field name="water_temperature" />
+                                        <field name="dresses_alone" />
+                                        <field name="chooses_clothes" />
+                                        <field name="difficulty_with_clothes" />
+                                        <field name="discomfort_with_clothes" />
+                                        <field name="bites_nails" />
+                                        <field name="sucks_thumb" />
+                                        <field name="uses_pacifier" />
+                                        <field name="plays_with_unusual_object" />
+                                        <field name="calming_blanket" />
+                                        <field name="helps_at_home" />
+                                        <field name="peer_interaction" />
+                                        <field name="active_play" />
+                                        <field name="role_exchange" />
+                                        <field name="curiosity_with_other_children" />
+                                        <field name="approaching_child" />
+                                        <field name="initiates_interaction" />
+                                        <field name="chooses_friends" />
+                                        <field name="game_of_clues" />
+                                    </group>
+                                    <group col="2">
+                                        <field name="imitation_of_others" />
+                                        <field name="particular_object_preference" />
+                                        <field name="interest_in_senses" />
+                                        <field name="imaginary_games" />
+                                        <field name="competitiveness" />
+                                        <field name="likes_video_games" />
+                                        <field name="spontaneous_sharing" />
+                                        <field name="free_behavior" />
+                                        <field name="reciprocal_act" />
+                                        <field name="spontaneous_when_greeting" />
+                                        <field name="reaction_in_approach" />
+                                        <field name="can_comfort_you" />
+                                        <field name="interest_in_body_part" />
+                                        <field name="interferes_with_movement_interest" />
+                                        <field name="imitates_relatives" />
+                                        <field name="imitates_similar_exact" />
+                                    </group>
+                                    
+                                </group>        
+
+
+                                    <!-- <field name="" /> -->
+                                    <!-- <field name="" /> -->
+                                    <!-- <field name="" /> -->
+                                    <!-- <field name="" /> -->
+                                    <!-- <field name="" /> -->
+                                    <!-- <field name="" /> -->
+                            
+                            </page>
+
+                            <!-- Accidentes - Escolaridad - General -->
+
+                            <page string="SOCIAL">
+                                <h4>X Escolaridad Aprendizaje</h4>
+                                <group>
+                                    <group col="1">
+                                        <field name="enter_school_age" />
+                                        <field name="attitude_school" />
+                                        <field name="repeated_school" />
+                                        <field name="what_grade" />
+                                        <field name="minimun_promoted" />
+                                        <field name="interrumped_school" />
+                                        <field name="was_cause" />
+                                        <field name="changes_school" />
+                                        <field name="when_which" />
+                                        <field name="performance_writing" />
+                                        <field name="performance_reading" />
+                                        <field name="performance_calculus" />
+                                        <field name="performance_social_interaction" />
+                                        <field name="subjects_problems" />
+                                        <field name="difficult_subject" />
+                                    </group>
+                                    <group col="2">
+                                        <field name="likes_subject" />
+                                        <field name="learning_home" />
+                                        <field name="face_homework" />
+                                        <field name="time_homrework" />
+                                        <field name="what_motivate" />
+                                        <field name="reaction_achievements" />
+                                        <field name="excited_share" />
+                                        <field name="part_recreational" />
+                                        <field name="activities_frequently" />
+                                    </group>
+                                </group>
+                                <h4> XI COMPORTAMIENTO GENERAL</h4>
+                                <group>
+                                    <field name="aggressive_family" />
+                                    <field name="aggressive_outside_family" />
+                                    <field name="hurt_deliberately" />
+                                    <field name="other_comments_general" />
+                                </group> 
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        
+    <!-- Action Server View -->
+        <record id="initial_questionnarie_view_action" model="ir.actions.act_window">
+            <field name="name">Initial Questionnaire</field>
+            <field name="res_model">initial_questionnarie</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+    <!-- Menu -->
+        <menuitem name="Initial Questionnarie" id="initial_questionnarie_menu_item" sequence="90" action="initial_questionnarie_view_action"/>
+
+    </data>
+</odoo>

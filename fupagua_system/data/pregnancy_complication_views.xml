@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="infectious" model="complication_pregnancy">
+            <field name="name"> Enfermedades infecciosas</field>
+        </record>
+
+        <record id="abortions" model="complication_pregnancy">
+            <field name="name">Amenaza de abortos</field>
+        </record>
+
+        <record id="premature" model="complication_pregnancy">
+            <field name="name">Amenaza de parto prematuro</field>
+        </record>
+
+        <record id="rupture_membrane" model="complication_pregnancy">
+            <field name="name">Ruptura temprana de membrana</field>
+        </record>
+
+        <record id="trauma" model="complication_pregnancy">
+            <field name="name">Traumatismo abdominal</field>
+        </record>
+
+        <record id="emotional" model="complication_pregnancy">
+            <field name="name">Impactos emocionales</field>
+        </record>
+
+        <record id="diabetes" model="complication_pregnancy">
+            <field name="name">Diabetes mellitus</field>
+        </record>
+
+        <record id="hypertension" model="complication_pregnancy">
+            <field name="name">Hipertensión arterial</field>
+        </record>
+
+        <record id="seizure" model="complication_pregnancy">
+            <field name="name">Convulsiones</field>
+        </record>
+
+        <record id="preeclampsia" model="complication_pregnancy">
+            <field name="name">Preecampsia</field>
+        </record>
+
+    </data>
+</odoo>

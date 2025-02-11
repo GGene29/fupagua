@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- View Tree -->
+        <record model="ir.ui.view" id="illneeses_type_view_tree">
+            <field name="name">Illnesses</field>
+            <field name="model">illnesses</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name" />
+                </tree>
+            </field>
+        </record>
+
+        <!-- View Form -->
+        <record model="ir.ui.view" id="illnesses_type_view_form">
+            <field name="name">Illnesses</field>
+            <field name="model">illnesses</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="name" />                
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Action Server View-->
+        <record id="illnesses_type_view_action" model="ir.actions.act_window">
+            <field name="name">Illnesses</field>
+            <field name="res_model">illnesses</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+    
+    </data>
+</odoo>

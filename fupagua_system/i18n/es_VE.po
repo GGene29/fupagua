@@ -1,0 +1,1269 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* fupagua_system
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0-20241118\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-31 03:52+0000\n"
+"PO-Revision-Date: 2025-01-31 03:52+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: fupagua_system
+#: model:res.groups,comment:fupagua_system.group_specialist_fupagua
+msgid ""
+"\n"
+"                Este grupo tendrá los permisos basico que deben tener todos los usuarios especialistas\n"
+"            "
+msgstr ""
+
+#. module: fupagua_system
+#: model:res.groups,comment:fupagua_system.group_receptionist_fupagua
+msgid ""
+"\n"
+"                Este grupo tendrá los permisos de recepcionista FUPAGUA\n"
+"            "
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__abortion_attempt
+msgid "Abortion attempt"
+msgstr "Intento abortar en algún momento"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__mother_address
+msgid "Addres Mother"
+msgstr "En caso de no habitar con su hijo o hija señale cuál es su dirección:"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__father_address
+msgid "Addres father"
+msgstr "En caso de no habitar con su hijo o hija señale cuál es su dirección:"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__address
+msgid "Address"
+msgstr "Dirección"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__adopted_child
+msgid "Adopted"
+msgstr "Adoptado"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__adoption_age
+msgid "Adoption process age"
+msgstr "Edad en la que se inició el proceso de adopción"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__age
+#: model:ir.model.fields,field_description:fupagua_system.field_patient__age
+msgid "Age"
+msgstr "Edad"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__age_mother_delivery
+msgid "Age of mother ar delivery"
+msgstr "Edad de la madre en el momento del parto:"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__another_birth_complication
+msgid "Another birth complication"
+msgstr "¿Recién nacido sufrió alguna de las siguientes complicaciones?"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__another_need_help
+msgid "Another needs help"
+msgstr "¿alguno de sus hijos ha tenido retrasos en el desarrollo o algún problema especial por el cual haya necesitado ayuda?"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__other_comments_general
+msgid "Any other comments:"
+msgstr "Algun otro comentario"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__receiving_medication
+msgid "Are you receiving any medication:"
+msgstr "Recibe algún tratamiento medicamentoso:"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_res_partner__area_specialization_id
+#: model:ir.model.fields,field_description:fupagua_system.field_res_users__area_specialization_id
+msgid "Area de Specialización"
+msgstr "Area de Especialización"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_area_specialization__area_name
+#: model:ir.ui.menu,name:fupagua_system.area_specialization_menu_item
+msgid "Area of Specialization"
+msgstr "Area de Especialización"
+
+#. module: fupagua_system
+#: model:ir.actions.server,name:fupagua_system.area_specialization_action_server
+msgid "Area of Specializations"
+msgstr "Area d Especializaciones"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__age_combine_formula
+msgid "At what age did you begin to combine breastfeeding with milk formulas"
+msgstr "Edad de combinación de lactancia materna y formulas lácteas"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__enter_school_age
+msgid "At what age did you enter school:"
+msgstr "Edad a la que ingresó a la escuela"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__time_homrework
+msgid "At what time do you usually do homework and where:"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model,name:fupagua_system.model_habits_pregnancy
+msgid "Bad habits during pregnancy"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__bioligical_condition
+msgid "Bioligical parents condition"
+msgstr "Los padre biológicos presenta dificultades de desarrollo"
+
+#. module: fupagua_system
+#: model:ir.actions.server,name:fupagua_system.birth_complications_action_server
+#: model:ir.ui.menu,name:fupagua_system.birth_complications_menu_item
+msgid "Birth Complication"
+msgstr "Complicaciones al nacer"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__birth_complications_type
+msgid "Birth Complications Type"
+msgstr "Complicaciones de Nacimiento"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__birth_weigth
+msgid "Borth weigth"
+msgstr "Peso al nacer"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__identification
+msgid "CI"
+msgstr "Identificación"
+
+#. module: fupagua_system
+#: model_terms:ir.ui.view,arch_db:fupagua_system.initial_questionnarie_form
+msgid "CUESTIONARIO INICIAL"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__performance_calculus
+msgid "Calculus"
+msgstr "Cálculo"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__caragiver_id
+msgid "Caragiver ID"
+msgstr "Cédula"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__caragiver_age
+msgid "Caragiver age"
+msgstr "Edad"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__caragiver
+msgid "Caraviger"
+msgstr "Cuidador"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__cause_cesarean
+msgid "Cause of cesarean"
+msgstr "Motivo de cesárea"
+
+#. module: fupagua_system
+#: model:ir.model.fields.selection,name:fupagua_system.selection__initial_questionnarie__type_delivery__1
+msgid "Cesarea"
+msgstr "Cesarea"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__registration_code
+msgid "Code History"
+msgstr "Código de Historia Clinica"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_complication_pregnancy__name
+#: model:ir.ui.menu,name:fupagua_system.complication_pregnancy_type_menu
+msgid "Complication Pregnancy"
+msgstr "Complicaciones de Embarazo"
+
+#. module: fupagua_system
+#: model:ir.model,name:fupagua_system.model_complication_pregnancy
+msgid "Complications presented during the pregnancy process"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model,name:fupagua_system.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_area_specialization__create_uid
+#: model:ir.model.fields,field_description:fupagua_system.field_birth_complications__create_uid
+#: model:ir.model.fields,field_description:fupagua_system.field_complication_pregnancy__create_uid
+#: model:ir.model.fields,field_description:fupagua_system.field_habits_pregnancy__create_uid
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__create_uid
+#: model:ir.model.fields,field_description:fupagua_system.field_patient__create_uid
+#: model:ir.model.fields,field_description:fupagua_system.field_services__create_uid
+#: model:ir.model.fields,field_description:fupagua_system.field_sessions_fupagua__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_area_specialization__create_date
+#: model:ir.model.fields,field_description:fupagua_system.field_birth_complications__create_date
+#: model:ir.model.fields,field_description:fupagua_system.field_complication_pregnancy__create_date
+#: model:ir.model.fields,field_description:fupagua_system.field_habits_pregnancy__create_date
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__create_date
+#: model:ir.model.fields,field_description:fupagua_system.field_patient__create_date
+#: model:ir.model.fields,field_description:fupagua_system.field_services__create_date
+#: model:ir.model.fields,field_description:fupagua_system.field_sessions_fupagua__create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: fupagua_system
+#: model:ir.model,name:fupagua_system.model_initial_questionnarie
+msgid "Cuestionario Inicial es lo mazimo para poder compartir "
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__current_area_specialization_id
+#: model:ir.model.fields,field_description:fupagua_system.field_patient__current_area_specialization_id
+msgid "Current Area Specialization"
+msgstr "Especialización del área actual"
+
+#. module: fupagua_system
+#: model_terms:ir.ui.view,arch_db:fupagua_system.initial_questionnarie_form
+msgid "DESARROLLO EVOLUTIVO"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__provider_by
+msgid "Data Provider By"
+msgstr "Datos facilitados por"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__date_of_birth
+#: model:ir.model.fields,field_description:fupagua_system.field_patient__date_of_birth
+msgid "Date Birthday"
+msgstr "Fecha de nacimiento"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__create_patient
+#: model:ir.model.fields,field_description:fupagua_system.field_patient__create_patient
+msgid "Date Registrion"
+msgstr "Fecha de registro"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__describe_coexistence
+msgid "Describe coexistence"
+msgstr "Describe la coexistencia en la vivienda"
+
+#. module: fupagua_system
+#: model_terms:ir.ui.view,arch_db:fupagua_system.view_partner_form_custom
+msgid "Description"
+msgstr "Descripción"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_res_partner__description_specialist
+#: model:ir.model.fields,field_description:fupagua_system.field_res_users__description_specialist
+msgid "Description Specialist"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__desired_child
+msgid "Desired child"
+msgstr "Fue deseado"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__diagnosis_examination
+msgid "Diagnosis or Examination"
+msgstr ""
+"Si ha recibido algún diagnóstico, mencione cuál ha sido y quien lo ha "
+"realizado; así como los estudios o exámenes que le han realizado y sus "
+"resultados."
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__exclusive_breatfeeding
+msgid "Did the child enjoy exclusive breastfeeding?"
+msgstr "Lactancia materna exclusiva"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__age_difference
+msgid "Difference Age"
+msgstr ""
+"¿Qué edad tenía su hijo o hija cuando notó que existía una diferencia en su "
+"desarrollo con respecto a otros niños?"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__difference_description
+msgid "Difference Text"
+msgstr ""
+"Describa cómo ha sido la conducta o situación que le preocupa desde sus "
+"inicios."
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_area_specialization__display_name
+#: model:ir.model.fields,field_description:fupagua_system.field_birth_complications__display_name
+#: model:ir.model.fields,field_description:fupagua_system.field_complication_pregnancy__display_name
+#: model:ir.model.fields,field_description:fupagua_system.field_habits_pregnancy__display_name
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__display_name
+#: model:ir.model.fields,field_description:fupagua_system.field_patient__display_name
+#: model:ir.model.fields,field_description:fupagua_system.field_services__display_name
+#: model:ir.model.fields,field_description:fupagua_system.field_sessions_fupagua__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__concerns_health
+msgid "Do you have any concerns about your son or daughters health?"
+msgstr "Posee inquietudes sobre la salud del niño"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__intolerance
+msgid "Does he/she have intolerance to any food"
+msgstr "Presenta intolerancia algún alimento"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__activities_frequently
+msgid "Does your child have any skills or do any activities frequently?"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__part_recreational
+msgid ""
+"Does your child take part in recreational or sports activities on his/her "
+"own initiative (which ones):"
+msgstr ""
+
+#. module: fupagua_system
+#: model_terms:ir.ui.view,arch_db:fupagua_system.initial_questionnarie_form
+msgid "ENTREVISTA MÉDICO, EDUCATIVO, SOCIAL Y FAMILIAR"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__eats_alone
+msgid "Eats alone"
+msgstr "¿Come sólo?"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__caragiver_educational
+msgid "Educational"
+msgstr "Grado de instrucción"
+
+#. module: fupagua_system
+#: model:res.groups,name:fupagua_system.group_specialist_fupagua
+msgid "Especialista FUPAGUA"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields.selection,name:fupagua_system.selection__initial_questionnarie__caragiver_nationality__2
+#: model:ir.model.fields.selection,name:fupagua_system.selection__initial_questionnarie__father_nationality__2
+#: model:ir.model.fields.selection,name:fupagua_system.selection__initial_questionnarie__mother_nationality__2
+#: model:ir.model.fields.selection,name:fupagua_system.selection__initial_questionnarie__nationality__2
+msgid "Extranjero"
+msgstr ""
+
+#. module: fupagua_system
+#: model_terms:ir.ui.view,arch_db:fupagua_system.initial_questionnarie_form
+msgid "FAMILIAR"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__family_condition
+msgid "Family Condition"
+msgstr "Alguien de la familia tiene dificultades o enfermedades, indique relación"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__family_dynamics
+msgid "Family Dynamics"
+msgstr "Describa la dinámica familiar"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__reaction_adopted_family
+msgid "Family reaction to adoption"
+msgstr "¿Cuál fue la reacción de la familia ante la adopción?"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__family_relationship
+msgid "Family relationship"
+msgstr "¿Cómo es la relación de cada familiar con el niño?"
+
+#. module: fupagua_system
+#: model:ir.model.fields.selection,name:fupagua_system.selection__initial_questionnarie__caragiver__2
+msgid "Father"
+msgstr "Padre"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__name_caragiver
+msgid "Full name caragiver"
+msgstr ""
+
+#. module: fupagua_system
+#: model_terms:ir.ui.view,arch_db:fupagua_system.initial_questionnarie_form
+msgid "GESTACIÓN"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__habits_others
+msgid "Habits Others"
+msgstr "Otro hábito:"
+
+#. module: fupagua_system
+#: model:ir.ui.menu,name:fupagua_system.habits_pregnancy_type_menu
+msgid "Habits Pregnancy"
+msgstr "Hábitos en Embarazo"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__hurt_deliberately
+msgid ""
+"Has he/she ever deliberately hurt himself/herself, for example by biting, "
+"hitting or pulling his/her hair?"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__minimun_promoted
+msgid ""
+"Have you achieved the minimum objectives to be promoted to the next level:"
+msgstr "Ha alcanzado los objetivos mínimos para ser promovido de nivel"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__changes_school
+msgid "Have you changed schools"
+msgstr "A tenido cambios de escuela"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__have_accident
+msgid "Have you ever had an accident?"
+msgstr "Ha sufrido algún accidente"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__needed_operation
+msgid "Have you ever needed an operation?"
+msgstr "Ha sufrido alguna operación"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__vaccinations
+msgid "Have you had all your vaccinations:"
+msgstr "Tiene sus vacunas completas"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__interrumped_school
+msgid "Have you interrupted your attendance for a long time"
+msgstr "Interrupción en su asistencia por tiempo prolongado"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__repeated_school
+msgid "Have you repeated boolean"
+msgstr "¿Ha repetido?"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__face_homework
+msgid "How do you face homework and what strategies do you have to do them:"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__learning_home
+msgid "How do you face the teaching-learning processes at home:"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_area_specialization__id
+#: model:ir.model.fields,field_description:fupagua_system.field_birth_complications__id
+#: model:ir.model.fields,field_description:fupagua_system.field_complication_pregnancy__id
+#: model:ir.model.fields,field_description:fupagua_system.field_habits_pregnancy__id
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__id
+#: model:ir.model.fields,field_description:fupagua_system.field_patient__id
+#: model:ir.model.fields,field_description:fupagua_system.field_services__id
+#: model:ir.model.fields,field_description:fupagua_system.field_sessions_fupagua__id
+msgid "ID"
+msgstr ""
+
+#. module: fupagua_system
+#: model_terms:ir.ui.view,arch_db:fupagua_system.initial_questionnarie_form
+msgid "II Motivo de Consulta"
+msgstr ""
+
+#. module: fupagua_system
+#: model_terms:ir.ui.view,arch_db:fupagua_system.initial_questionnarie_form
+msgid "III Familiar"
+msgstr ""
+
+#. module: fupagua_system
+#: model_terms:ir.ui.view,arch_db:fupagua_system.initial_questionnarie_form
+msgid "IV Datos Socioeconómicos"
+msgstr ""
+
+#. module: fupagua_system
+#: model_terms:ir.ui.view,arch_db:fupagua_system.initial_questionnarie_form
+msgid "IX Accidentes o Enfermedades"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__difficult_subject
+msgid ""
+"If you have difficulty in any subject, mention from which grade onwards "
+"these became more noticeable:"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__subjects_problems
+msgid "In which subjects do you have problems:"
+msgstr ""
+
+#. module: fupagua_system
+#: model_terms:ir.ui.view,arch_db:fupagua_system.initial_questionnarie_form
+msgid "Información General Familiar"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields.selection,name:fupagua_system.selection__initial_questionnarie__schooling__0
+msgid "Inicial"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_sessions_fupagua__initial_questionnarie_id
+#: model:ir.ui.menu,name:fupagua_system.initial_questionnarie_menu_item
+msgid "Initial Questionnarie"
+msgstr "Cuestionario Inicial"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__institution
+msgid "Institution"
+msgstr "Institución"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__aggressive_outside_family
+msgid "Is he/she aggressive towards people outside the family?"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__selective_foods
+msgid "Is he/she selective about foods"
+msgstr "Es selectivo con los alimentos"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__aggressive_family
+msgid ""
+"Is he/she sometimes aggressive towards his/her caregivers or family members?"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__kilos_gain_pregnancy
+msgid "Kilos gain pregnancy?"
+msgstr "¿Cuantos kilos aumentó durante el embarazo?"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__relationship
+msgid "Kinship relationship with the evaluated"
+msgstr "Relación de parentezco con el evaluado"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__knows_adopted
+msgid "Knows he is adopted"
+msgstr "¿Sabe el niño o niña que es adoptado?"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_area_specialization____last_update
+#: model:ir.model.fields,field_description:fupagua_system.field_birth_complications____last_update
+#: model:ir.model.fields,field_description:fupagua_system.field_complication_pregnancy____last_update
+#: model:ir.model.fields,field_description:fupagua_system.field_habits_pregnancy____last_update
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie____last_update
+#: model:ir.model.fields,field_description:fupagua_system.field_patient____last_update
+#: model:ir.model.fields,field_description:fupagua_system.field_services____last_update
+#: model:ir.model.fields,field_description:fupagua_system.field_sessions_fupagua____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_area_specialization__write_uid
+#: model:ir.model.fields,field_description:fupagua_system.field_birth_complications__write_uid
+#: model:ir.model.fields,field_description:fupagua_system.field_complication_pregnancy__write_uid
+#: model:ir.model.fields,field_description:fupagua_system.field_habits_pregnancy__write_uid
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__write_uid
+#: model:ir.model.fields,field_description:fupagua_system.field_patient__write_uid
+#: model:ir.model.fields,field_description:fupagua_system.field_services__write_uid
+#: model:ir.model.fields,field_description:fupagua_system.field_sessions_fupagua__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_area_specialization__write_date
+#: model:ir.model.fields,field_description:fupagua_system.field_birth_complications__write_date
+#: model:ir.model.fields,field_description:fupagua_system.field_complication_pregnancy__write_date
+#: model:ir.model.fields,field_description:fupagua_system.field_habits_pregnancy__write_date
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__write_date
+#: model:ir.model.fields,field_description:fupagua_system.field_patient__write_date
+#: model:ir.model.fields,field_description:fupagua_system.field_services__write_date
+#: model:ir.model.fields,field_description:fupagua_system.field_sessions_fupagua__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__lastname
+#: model:ir.model.fields,field_description:fupagua_system.field_patient__lastname
+msgid "Lastname"
+msgstr "Apellidos"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__length_labor
+msgid "Length of labor"
+msgstr "Duración de la labor de parto"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__caragiver_status
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__father_status
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__mother_status
+msgid "Marital Status"
+msgstr "Estado Civil"
+
+#. module: fupagua_system
+#: model:ir.model.fields.selection,name:fupagua_system.selection__initial_questionnarie__schooling__2
+msgid "Media"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model,name:fupagua_system.model_services
+msgid "Model to store information about specialist services"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields.selection,name:fupagua_system.selection__initial_questionnarie__caragiver__1
+msgid "Mother"
+msgstr "Madre"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__mother_educational
+msgid "Mother Educational Level"
+msgstr "Grado de instrucción"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__mother_nif
+msgid "Mother NIF"
+msgstr "Cédula"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__mother_name
+msgid "Mother Name"
+msgstr "Nombre Completo"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__mother_occupation
+msgid "Mother Occupation"
+msgstr "Ocupación"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__mother_salary
+msgid "Mother Salary"
+msgstr "Sueldo que devenga"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__mother_work
+msgid "Mother Work Schedule"
+msgstr "Horario de trabajo"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__mother_age
+msgid "Mother age"
+msgstr "Edad"
+
+#. module: fupagua_system
+#: model_terms:ir.ui.view,arch_db:fupagua_system.initial_questionnarie_form
+msgid "MÉDICO"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__name
+#: model:ir.model.fields,field_description:fupagua_system.field_patient__name
+#: model:ir.model.fields,field_description:fupagua_system.field_services__name
+msgid "Name"
+msgstr "Nombres"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__caragiver_nationality
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__father_nationality
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__mother_nationality
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__nationality
+msgid "Nationality"
+msgstr "Nacionalidad"
+
+#. module: fupagua_system
+#: model:ir.model.fields.selection,name:fupagua_system.selection__initial_questionnarie__type_delivery__2
+msgid "Natural"
+msgstr "Natural"
+
+#. module: fupagua_system
+#: model:ir.module.category,name:fupagua_system.module_category_fupagua
+msgid "Niveles de usuario FUPAGUA"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.module.category,description:fupagua_system.module_category_fupagua
+msgid "Niveles para roles de usuario"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__normal_breathing
+msgid "Normal breathing"
+msgstr "Respiró normalmente"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__number_pregnancy
+msgid "Number of pregnancies"
+msgstr "¿Qué número de embarazo?"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__caragiver_occupation
+msgid "Occupation Caragiver"
+msgstr "Ocupación"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__origins
+msgid "Origins"
+msgstr "Procedencia"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__other_complication
+#: model:ir.model.fields.selection,name:fupagua_system.selection__initial_questionnarie__caragiver__3
+msgid "Other"
+msgstr "Otro"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__other_illnesses
+msgid "Other illness:"
+msgstr "Otra enfermedad"
+
+#. module: fupagua_system
+#: model:ir.model,name:fupagua_system.model_area_specialization
+msgid "Para cargar las areas de especialización"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__patient_id
+#: model:ir.ui.menu,name:fupagua_system.patient_menu_item
+msgid "Patient"
+msgstr "Paciente"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__pediatrician_monitors
+msgid "Pediatrician who monitors you"
+msgstr "Pediatra que lo controla"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__caragiver_phone
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__father_phone
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__mother_phone
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__phone
+#: model:ir.model.fields,field_description:fupagua_system.field_patient__phone
+msgid "Phone"
+msgstr "Telefono"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__place_of_birth
+msgid "Plance of birthday"
+msgstr "Lugar de Nacimiento"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__planned_pregnancy
+msgid "Planned Pregnancy"
+msgstr "¿El embarazo fue planeado?"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__period_pregnancy
+msgid "Pregnancy Period"
+msgstr "Periodo de las complicaciones"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__pregnancy_type_complication
+msgid "Pregnancy Type Complication"
+msgstr "Tipo de complicación durante el embarazo"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__pregnancy_attitude
+msgid "Pregnancy attitude parent"
+msgstr "Actitud de los padres en relación al embarazo"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__presentation_newborn
+msgid "Presentation of newborn"
+msgstr "Presentación del neonato"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__previous_abortion
+msgid "Previous Abortion"
+msgstr "¿Tuvo algún aborto previo a este embarazo?"
+
+#. module: fupagua_system
+#: model:ir.model.fields.selection,name:fupagua_system.selection__initial_questionnarie__schooling__1
+msgid "Primaria"
+msgstr "Primaria"
+
+#. module: fupagua_system
+#: model:ir.ui.menu,name:fupagua_system.questionnaire_supplements_menu
+msgid "Questionnaire supplements"
+msgstr "Complementos del cuestionario"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__questionnarie
+#: model:ir.model.fields,field_description:fupagua_system.field_patient__questionnarie
+msgid "Questionnarie"
+msgstr "Cuestionario Inicial"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__performance_reading
+msgid "Reading"
+msgstr "Lectura"
+
+#. module: fupagua_system
+#: model:res.groups,name:fupagua_system.group_receptionist_fupagua
+msgid "Recepcionista FUPAGUA"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__referred
+msgid "Referred by"
+msgstr "Referido por"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__caragiver_relationship
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__father_relationship
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__mother_relationship
+msgid "Relationship"
+msgstr "¿Cómo es la relación con el niño?"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__anesthesia_required
+msgid "Required anesthesia"
+msgstr "¿Requirió anestecia?"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__forceps_required
+msgid "Required forceps"
+msgstr "¿Requirió Forceps?"
+
+#. module: fupagua_system
+#: model_terms:ir.ui.view,arch_db:fupagua_system.initial_questionnarie_form
+msgid "SOCIAL"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__caragiver_salary
+msgid "Salary"
+msgstr "Salario"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__schooling
+msgid "Schooling"
+msgstr "Escolaridad"
+
+#. module: fupagua_system
+#: model:ir.actions.act_window,name:fupagua_system.services_fupagua_view_action
+#: model:ir.model.fields,field_description:fupagua_system.field_res_partner__service_ids
+#: model:ir.model.fields,field_description:fupagua_system.field_res_users__service_ids
+#: model:ir.ui.menu,name:fupagua_system.services_fupagua_view_menu
+#: model_terms:ir.ui.view,arch_db:fupagua_system.services_fupagua_view_form
+#: model_terms:ir.ui.view,arch_db:fupagua_system.services_fupagua_view_tree
+msgid "Services"
+msgstr "Servicios"
+
+#. module: fupagua_system
+#: model_terms:ir.ui.view,arch_db:fupagua_system.sessions_fupagua_view_form
+msgid "Session"
+msgstr "Sesión"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_sessions_fupagua__date
+msgid "Session Date"
+msgstr "Fecha de Sesión"
+
+#. module: fupagua_system
+#: model:ir.actions.act_window,name:fupagua_system.sessions_fupagua_view_action
+#: model:ir.ui.menu,name:fupagua_system.sessions_fupagua_view_menu
+#: model_terms:ir.ui.view,arch_db:fupagua_system.sessions_fupagua_view_tree
+msgid "Sessions"
+msgstr "Sesiones"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__desired_child_sex
+msgid "Sex of the child was desired"
+msgstr "El sexo del niño fue deseado, explique:"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__sex
+#: model:ir.model.fields,field_description:fupagua_system.field_patient__sex
+msgid "Sexo"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_habits_pregnancy__name
+msgid "She had bad habits during pregnancy"
+msgstr "Mantuvo algúno de estos hábitos durante el embarazo, seleccione:"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__monitor_pregnancy
+msgid "Since when did you monitor your pregnancy?"
+msgstr "¿Desde cuándo controló su embarazo?"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__down_eats
+msgid "Sits down to eat and finishes his/her meal"
+msgstr "Se sienta para comer hasta finalizar:"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__performance_social_interaction
+msgid "Social Interaction"
+msgstr "Interacción social"
+
+#. module: fupagua_system
+#: model_terms:ir.ui.view,arch_db:fupagua_system.view_partner_form_custom
+msgid "Specialization"
+msgstr "Especialización"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__specify_intolerance
+msgid "Specify intolerance food"
+msgstr "Especifique alimento intolerantes"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__specify_formulas
+msgid "Specify milk formulas"
+msgstr "Especifique las formulas"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__specify_like_dislike
+msgid "Specify which ones he/she prefers and which one he/she dislikes:"
+msgstr "Especifique cuáles prefiere y cual le disgusta:"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__spontaneous_crying
+msgid "Spontaneous crying"
+msgstr "Llanto de manera espontánea"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_area_specialization__stage_area
+msgid "Stage"
+msgstr "Etapa"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__father_support
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__mother_support
+msgid "Support"
+msgstr "De no estar trabajando cómo obtiene el sustento familiar"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__caragiver_support
+msgid "Support Family"
+msgstr "De no estar trabajando cómo obtiene el sustento familiar"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__treating_physician
+msgid "Treating physician"
+msgstr "Médico tratante"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__treatment_evolution
+msgid "Treatment and evoluction"
+msgstr "Si ha recibido atención, mencione qué tratamiento durante cuánto tiempo, cómo ha sido la evolución"
+
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__type_habits_pregnancy
+msgid "Type Habits Pregnancy"
+msgstr "Tipo de hábitos en el embarazo"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_birth_complications__name
+msgid "Type birth complication"
+msgstr "Tipo de complicación al nacer"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__type_housing
+msgid "Type of Housing"
+msgstr "Tipo de Vivienda"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__type_delivery
+msgid "Type of labor"
+msgstr "Tipo de parto"
+
+#. module: fupagua_system
+#: model_terms:ir.ui.view,arch_db:fupagua_system.initial_questionnarie_form
+msgid "V Antecedentes"
+msgstr ""
+
+#. module: fupagua_system
+#: model_terms:ir.ui.view,arch_db:fupagua_system.initial_questionnarie_form
+msgid "VI Nacimiento"
+msgstr ""
+
+#. module: fupagua_system
+#: model_terms:ir.ui.view,arch_db:fupagua_system.initial_questionnarie_form
+msgid "VII Alimentación"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields.selection,name:fupagua_system.selection__initial_questionnarie__caragiver_nationality__1
+#: model:ir.model.fields.selection,name:fupagua_system.selection__initial_questionnarie__father_nationality__1
+#: model:ir.model.fields.selection,name:fupagua_system.selection__initial_questionnarie__mother_nationality__1
+#: model:ir.model.fields.selection,name:fupagua_system.selection__initial_questionnarie__nationality__1
+msgid "Venezolano"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__was_desired
+msgid "Was desired"
+msgstr "Explique por qué lo deseó"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__weeks_gestation
+msgid "Weeks of gestation"
+msgstr "Edad gestacional (semanas)"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__likes_subject
+msgid "What are the subjects that you like the most:"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__current_diet
+msgid "What is the current diet like?"
+msgstr "¿Cómo es la dieta actual?"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__reaction_achievements
+msgid ""
+"What is your reaction to achievements and failures (indicate Examples):"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__what_motivate
+msgid "What motivates you:"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__attitude_school
+msgid "What was your initial attitude towards school:"
+msgstr "Actitud inicial escolar"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__type_operation
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__what_type
+msgid "When and what type?"
+msgstr "Cuando y de qué tipo"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__semisolids_which
+msgid "When did you initiate semisolids and which ones did you use?"
+msgstr "¿Cuándo inició los semisólidos y cuáles utilizó?"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__solids_which
+msgid "When did you initiate solids and which ones did you use?"
+msgstr "¿Cuándo inició los sólidos y cuáles utilizó?"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__breatfeeding_discontinued
+msgid "When was breastfeeding discontinued?"
+msgstr "¿Cuando suspendió lactancia materna?"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__excited_share
+msgid ""
+"When you get excited about something or do something you know is right, do "
+"you show it to other people? (a)"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__caragiver_work_schedule
+msgid "Work Schedule"
+msgstr "Horario de trabajo"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__performance_writing
+msgid "Writing"
+msgstr "Escritura"
+
+#. module: fupagua_system
+#: model_terms:ir.ui.view,arch_db:fupagua_system.initial_questionnarie_form
+msgid "X Escolaridad Aprendizaje"
+msgstr ""
+
+#. module: fupagua_system
+#: model_terms:ir.ui.view,arch_db:fupagua_system.initial_questionnarie_form
+msgid "XI COMPORTAMIENTO GENERAL"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__adoption_agreement
+msgid "adoption agreement"
+msgstr "¿Hubo acuerdo entre la pareja para la adopción?"
+
+#. module: fupagua_system
+#: model:ir.model.fields.selection,name:fupagua_system.selection__initial_questionnarie__type_housing__1
+msgid "apartment"
+msgstr "Departamento"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__biological_parents_charge
+msgid "biological parents in charge"
+msgstr "¿Es padre o madre biológico?"
+
+#. module: fupagua_system
+#: model:ir.actions.server,name:fupagua_system.complication_pregnancy_action_server
+msgid "complication pregnancy"
+msgstr "¿Tuvo alguna complicación?, seleccione:"
+
+#. module: fupagua_system
+#: model:ir.model,name:fupagua_system.model_birth_complications
+msgid "complications presented at birth"
+msgstr "Complicaciones presentadas al nacer"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__evaluation_reason
+msgid "evaluation_reason"
+msgstr "¿podría decirme la razón por la cual su hijo o hija está siendo traído a evaluación?"
+
+#. module: fupagua_system
+#: model:ir.model.fields.selection,name:fupagua_system.selection__initial_questionnarie__type_housing__2
+msgid "farm"
+msgstr "Finca"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__father_educational
+msgid "father Educational Level"
+msgstr "Grado de Instrucción"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__father_nif
+msgid "father NIF"
+msgstr "Cédula"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__father_name
+msgid "father Name"
+msgstr "Nombres y apellidos"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__father_occupation
+msgid "father Occupation"
+msgstr "Ocupación"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__father_salary
+msgid "father Salary"
+msgstr "Sueldo que devenga"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__father_work
+msgid "father Work Schedule"
+msgstr "Horario de trabajo"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__father_age
+msgid "father age"
+msgstr "Edad"
+
+#. module: fupagua_system
+#: model:ir.actions.server,name:fupagua_system.habits_pregnancy_action_server
+msgid "habits_pregnancy"
+msgstr "Habitos durante el embarazo, seleccione:"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__birth_heigth
+msgid "heigth"
+msgstr "Talla al nacer"
+
+#. module: fupagua_system
+#: model:ir.model.fields.selection,name:fupagua_system.selection__initial_questionnarie__type_housing__0
+msgid "house"
+msgstr "Casa"
+
+#. module: fupagua_system
+#: model:ir.model.fields.selection,name:fupagua_system.selection__initial_questionnarie__type_abortion__0
+msgid "induce"
+msgstr "Inducido"
+
+#. module: fupagua_system
+#: model:ir.actions.server,name:fupagua_system.initial_questionnarie_action_server
+msgid "initial_questionnarie_server"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model,name:fupagua_system.model_sessions_fupagua
+msgid "model to save session information"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields.selection,name:fupagua_system.selection__initial_questionnarie__type_abortion__1
+msgid "natural"
+msgstr "Natural"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__opinion_behavior_caragiver
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__opinion_behavior_father
+msgid "opinion_behavior_father"
+msgstr "¿Qué opinión tiene respecto al niño o niña en cuanto a su conducta?"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__opinion_behavior_mother
+msgid "opinion_behavior_mother"
+msgstr "¿Qué opinión tiene respecto al niño o niña en cuanto a su conducta?"
+
+#. module: fupagua_system
+#: model:ir.actions.server,name:fupagua_system.patient_action_server
+msgid "patient_server"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields.selection,name:fupagua_system.selection__initial_questionnarie__type_housing__3
+msgid "ranch"
+msgstr "Rancho"
+
+#. module: fupagua_system
+#: model:ir.model,name:fupagua_system.model_patient
+msgid "registro de pacientes"
+msgstr ""
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_sessions_fupagua__specialist_id
+msgid "specialist"
+msgstr "Especialista"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_services__specialization_id
+msgid "specialization"
+msgstr "Especialización"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__type_abortion
+msgid "type abortion"
+msgstr "Tipo de aborto"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__what_grade
+msgid "what grade"
+msgstr "Grado repitiente"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__was_cause
+msgid "what was the cause"
+msgstr "Explique la causa:"
+
+#. module: fupagua_system
+#: model:ir.model.fields,field_description:fupagua_system.field_initial_questionnarie__when_which
+msgid "when and to which ones"
+msgstr "Cuando y cuales, explique:"

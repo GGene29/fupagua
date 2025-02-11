@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <record id="asphyxia" model="birth_complications">
+        <field name="name">Asfixia</field>
+    </record>
+
+    <record id="absences" model="birth_complications">
+        <field name="name">Ausencias</field>
+    </record>
+
+    <record id="mecomiun_aspiration" model="birth_complications">
+        <field name="name">Aspiración Meconial</field>
+    </record>
+
+    <record id="cardiopathy" model="birth_complications">
+        <field name="name">Cardiopatia</field>
+    </record>
+
+    <record id="cephalohematoma" model="birth_complications">
+        <field name="name">Cefalohematoma</field>
+    </record>
+
+    <record id="cyanosis" model="birth_complications">
+        <field name="name">Cianosis</field>
+    </record>
+
+    <record id="colic" model="birth_complications">
+        <field name="name">Colicos</field>
+    </record>
+
+    <record id="convulsion" model="birth_complications">
+        <field name="name">Convulsion</field>
+    </record>
+
+    <record id="fever" model="birth_complications">
+        <field name="name">Fiebre</field>
+    </record>
+
+    <record id="intracraneal_hemorrhage" model="birth_complications">
+        <field name="name">Hemorragia Intracraneal</field>
+    </record>
+
+    <record id="hyperbilirubinemia" model="birth_complications">
+        <field name="name">Hiperbilirubinemia</field>
+    </record>
+
+    <record id="hyperglycemia" model="birth_complications">
+        <field name="name">Hiperglicemia</field>
+    </record>
+
+    <record id="hypoglycemia" model="birth_complications">
+        <field name="name">Hipoglicemia</field>
+    </record>
+
+    <record id="hypocalcema" model="birth_complications">
+        <field name="name">Hipocalcemia</field>
+    </record>
+
+    <record id="hyperthyroidism" model="birth_complications">
+        <field name="name">Hipertiroidismo</field>
+    </record>
+
+    <record id="hypothyroidism" model="birth_complications">
+        <field name="name">Hipotiroidismo</field>
+    </record>
+
+    <record id="hypoxia" model="birth_complications">
+        <field name="name">Hipoxia</field>
+    </record>
+
+    <record id="jaundice" model="birth_complications">
+        <field name="name">Ictericia</field>
+    </record>
+
+    <record id="incompatibility" model="birth_complications">
+        <field name="name">Incompatibilidad</field>
+    </record>
+
+    <record id="infections" model="birth_complications">
+        <field name="name">Infecciones</field>
+    </record>
+
+    <record id="malformations" model="birth_complications">
+        <field name="name">Malformaciones</field>
+    </record>
+
+    <record id="hyaline_membrane" model="birth_complications">
+        <field name="name">Membrana Hialina</field>
+    </record>
+
+    <record id="ophthalmia" model="birth_complications">
+        <field name="name">Oftalmia</field>
+    </record>
+
+    <record id="shock" model="birth_complications">
+        <field name="name">Shock</field>
+    </record>
+
+    <record id="fetal_distress" model="birth_complications">
+        <field name="name">Sufrimiento Fetal</field>
+    </record>
+
+    <record id="transient_tachypnea" model="birth_complications">
+        <field name="name">Taquipnea Transitoria</field>
+    </record>
+
+    <record id="obstetric_trauma" model="birth_complications">
+        <field name="name">Trauma Obstétrico</field>
+    </record>
+
+    <record id="vomiting" model="birth_complications">
+        <field name="name">Vomitos</field>
+    </record>
+
+    <record id="sepsis" model="birth_complications">
+        <field name="name">Sepsis</field>
+    </record>
+
+    <record id="incubator_required" model="birth_complications">
+        <field name="name">Requirio Incubadora</field>
+    </record>
+
+    <record id="medications_required" model="birth_complications">
+        <field name="name">Requirio Medicamentos</field>
+    </record>
+
+    <record id="treatments_surgical" model="birth_complications">
+        <field name="name">Requirio Tratamientos Quirurgicos</field>
+    </record>
+
+    <record id="resucitations" model="birth_complications">
+        <field name="name">Requirio Reanimación</field>
+    </record>
+
+    <record id="mecanical_ventilations" model="birth_complications">
+        <field name="name">Requirio Ventilación Mecanica</field>
+    </record>
+
+</data>

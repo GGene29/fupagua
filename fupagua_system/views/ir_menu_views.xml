@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.menu" id="mail.menu_root_discuss">
+            <field name="name">Discuss</field>
+            <field name="groups_id" eval="[(6,0, [ref('base.group_system') ] )]"/>
+        </record>
+
+        <!-- <record model="ir.ui.menu" id="contacts.res_partner_menu_contacts">
+            <field name="name">Contacts</field>
+            <field name="groups_id" eval="[(6,0, [ref('base.group_system') ] )]"/>
+        </record> -->
+
+        <record model="ir.ui.menu" id="base.menu_management">
+            <field name="name">Apps</field>
+            <field name="groups_id" eval="[(6,0, [ref('base.group_system') ] )]"/>
+        </record>
+
+        <!-- <record model="ir.ui.menu" id="website.menu_website_configuration">
+            <field name="name">Website</field>
+            <field name="groups_id" eval="[(6,0, [ref('base.group_system') ] )]"/>
+        </record>
+
+        <record model="ir.ui.menu" id="utm.menu_link_tracker_root">
+            <field name="name">Link Tracker</field>
+            <field name="groups_id" eval="[(6,0, [ref('base.group_system') ] )]"/>
+        </record> -->
+
+        <menuitem name="Questionnaire supplements" id="questionnaire_supplements_menu" sequence="30"/>
+
+        <menuitem name="Complication Pregnancy" id="complication_pregnancy_type_menu" action="complication_pregnancy_view_action" parent="questionnaire_supplements_menu" sequence="10"/>
+
+        <menuitem name="Habits Pregnancy" id="habits_pregnancy_type_menu" action="habits_pregnancy_view_action" parent="questionnaire_supplements_menu" sequence="20" />
+
+        <menuitem name="Birth Complication" id="birth_complications_menu_item" action="birth_complications_view_action" parent="questionnaire_supplements_menu" sequence="30"/>
+
+        <menuitem name="Illnesses" id="illnesses_type_menu_item" action="illnesses_type_view_action" parent="questionnaire_supplements_menu" sequence="40"/>
+
+
+
+    </data>
+</odoo>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="fisic_area" model="area_specialization">
+            <field name="area_name">Fisica</field>
+            <field name="stage_area">I Area</field>
+        </record>
+
+        <record id="gross_motor_area" model="area_specialization">
+            <field name="area_name">Motora Gruesa</field>
+            <field name="stage_area">II Area</field>
+        </record>
+
+        <record id="fine_motor_area" model="area_specialization">
+            <field name="area_name">Motora Fina</field>
+            <field name="stage_area">II Area</field>
+        </record>
+
+        <record id="sexual_area" model="area_specialization">
+            <field name="area_name">Sexual</field>
+            <field name="stage_area">III Area</field>
+        </record>
+
+        <record id="cognitive_area" model="area_specialization">
+            <field name="area_name">Cognitiva</field>
+            <field name="stage_area">IV Area</field>
+        </record>
+
+        <record id="affection_area" model="area_specialization">
+            <field name="area_name">Afecto</field>
+            <field name="stage_area">V Area</field>
+        </record>
+
+        <record id="social_area" model="area_specialization">
+            <field name="area_name">Social</field>
+            <field name="stage_area">VI Area</field>
+        </record>
+
+        <record id="moral_area" model="area_specialization">
+            <field name="area_name">Moral</field>
+            <field name="stage_area">VII Area</field>
+        </record>
+
+        <record id="language_area" model="area_specialization">
+            <field name="area_name">Lenguaje</field>
+            <field name="stage_area">VIII Area</field>
+        </record>
+    </data>
+</odoo>

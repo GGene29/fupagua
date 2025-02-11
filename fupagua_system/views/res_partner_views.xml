@@ -1,0 +1,19 @@
+<!-- Modificaciones de las vistas del res_partner -->
+<odoo>
+    <data>
+        <!-- heredamos la vista existente para agregar nuevos campos -->
+        <record id="view_partner_form_custom" model="ir.ui.view">
+            <field name="name">res.partner.form.custom</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="arch" type="xml">
+                <!-- Añadir los nuevos campos al formulario -->
+                <xpath expr="//field[@name='vat']" position="after">
+                    <field name="area_specialization_id" string="Specialization" options="{'no_open': True, 'no_create': True, 'no_quick_create': True, 'no_create_edit':True}"/>
+                    <field name="service_ids" domain="[('specialization_id','=',area_specialization_id)]"/>
+                    <field name="description_specialist" string="Description"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
