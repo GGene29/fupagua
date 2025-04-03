@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="test_session_view_tree" model="ir.ui.view">
+            <field name="name">test.session.tree</field>
+            <field name="model">test.session</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="area_id" />
+                    <field name="consulta_id"/>
+                    <field name="paso"/>
+                    <field name="secuencia"/>
+                    <field name="pregunta"/>
+                    <field name="respuesta"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="test_session_view_form" model="ir.ui.view">
+            <field name="name">test.session.form</field>
+            <field name="model">test.session</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="area_id" />
+                            <field name="consulta_id"/>
+                            <field name="paso"/>
+                            <field name="secuencia"/>
+                            <field name="pregunta"/>
+                            <field name="respuesta"/>
+                            <field name="completado" />
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+    
+        <record id="test_session_action" model="ir.actions.act_window">
+            <field name="name">Preguntas</field>
+            <field name="res_model">test.session</field>
+            <!-- <field name="view_type">form</field> -->
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem
+            id="test_session_menu"
+            name="Preguntas"
+            action="test_session_action"
+            sequence="50"/>
+
+    </data>
+</odoo>

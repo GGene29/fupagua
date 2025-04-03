@@ -20,4 +20,5 @@ class Sessions(models.Model):
         string='specialist',
     )
 
+    test_id = fields.Many2one('test.session' , string="Preguntas")
     # TODO: Add many2one field about clinical history

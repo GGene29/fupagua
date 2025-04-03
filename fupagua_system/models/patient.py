@@ -1,4 +1,5 @@
-from odoo import models, fields
+from odoo import models, fields, api
+from datetime import date
 
 class Patient(models.Model):
     _name='patient'
@@ -13,7 +14,7 @@ class Patient(models.Model):
     
     date_of_birth = fields.Date(string="Date Birthday")
     
-    age = fields.Integer(string='Age')
+    age = fields.Integer(string='Age' , compute="_compute_age", store=True)
     
     month = fields.Integer(string='Month')
     
@@ -28,3 +29,15 @@ class Patient(models.Model):
     )
     
     questionnarie = fields.One2many('initial_questionnarie', 'patient_id', string="Questionnarie")
+    
+    
+    @api.depends('date_of_birth')
+    def _compute_age(self):
+        hoy = date.today()
+        for record in self:
+            if record.date_of_birth:
+                fecha_nac = record.date_of_birth
+                record.age = hoy.year - fecha_nac.year - ((hoy.month, hoy.day) < (fecha_nac.month, fecha_nac.day))
+            else:
+                record.age = 0
+    
