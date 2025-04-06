@@ -28,7 +28,15 @@
                             <field name="initial_questionnarie_id" options="{'no_create': True, 'no_quick_create': True, 'no_create_edit':True}"/>
                             <field name="date"/>
                             <field name="specialist_id" groups="base.group_system" options="{'no_open': True, 'no_create': True, 'no_quick_create': True, 'no_create_edit':True}"/>
-                            <field name="test_id" />
+                            <field name="test_id"> 
+                                <tree string="sesiones" editable="botton">
+                                    <field name="specialist_id"/>
+                                    
+                                
+                                </tree>
+                            
+                            </field>
+
                         </group>
                     </sheet>
                 </form>

@@ -26,7 +26,7 @@ class TestSession(models.Model):
         compute='_compute_completado',
         store=True
     )
-    
+        
     @api.depends('respuesta')
     def _compute_completado(self):
         for item in self:
