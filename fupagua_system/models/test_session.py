@@ -12,6 +12,7 @@ class TestSession(models.Model):
     pregunta = fields.Text(string='Pregunta')
     respuesta = fields.Boolean(string='Respuesta (Sí/No)')
     # observaciones = fields.Text(string='Notas adicionales')
+    session_ids = fields.Many2one('sessions.fupagua', string='Sesion')
     
     # Nuevo campo para el área/sección
     area_id = fields.Many2one(
