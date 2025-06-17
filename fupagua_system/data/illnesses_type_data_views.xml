@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="illness_adenitis" model="illnesses">
+            <field name="name">Adenitis</field>
+        </record>
+
+        <record id="illness_allergy" model="illnesses">
+            <field name="name">Alergia</field>
+        </record>
+
+        <record id="illness_asthma" model="illnesses">
+            <field name="name">Asma</field>
+        </record>
+
+        <record id="illness_bronchiolitis" model="illnesses">
+            <field name="name">Bronquiolitis</field>
+        </record>
+
+        <record id="illness_cytomegalovirus" model="illnesses">
+            <field name="name">Citomegalovirus</field>
+        </record>
+
+        <record id="illness_diarrhea" model="illnesses">
+            <field name="name">Diarrea</field>
+        </record>
+
+        <record id="illness_convulsions" model="illnesses">
+            <field name="name">Convulsiones</field>
+        </record>
+
+        <record id="illness_flatulence" model="illnesses">
+            <field name="name">Flatulencia</field>
+        </record>
+
+        <record id="illness_flu" model="illnesses">
+            <field name="name">Gripe</field>
+        </record>
+
+        <record id="illness_hepatitis" model="illnesses">
+            <field name="name">Hepatitis</field>
+        </record>
+
+        <record id="illness_urinary_infection" model="illnesses">
+            <field name="name">Infección Urinaria</field>
+        </record>
+
+        <record id="illness_laryngotracheitis" model="illnesses">
+            <field name="name">Laringotraquetis</field>
+        </record>
+
+        <record id="illness_pneumonia" model="illnesses">
+            <field name="name">Neumonía</field>
+        </record>
+
+        <record id="illness_otitis" model="illnesses">
+            <field name="name">Otitis</field>
+        </record>
+
+        <record id="illness_rhinopharyngitis" model="illnesses">
+            <field name="name">Rinofaringitis</field>
+        </record>
+
+        <record id="illness_rubella" model="illnesses">
+            <field name="name">Rubéola</field>
+        </record>
+
+        <record id="illness_aids" model="illnesses">
+            <field name="name">Sida</field>
+        </record>
+
+        <record id="illness_syphilis" model="illnesses">
+            <field name="name">Sífilis</field>
+        </record>
+
+        <record id="illness_trauma" model="illnesses">
+            <field name="name">Traumatismo</field>
+        </record>
+
+        <record id="illness_toxoplasmosis" model="illnesses">
+            <field name="name">Toxoplasmosis</field>
+        </record>
+
+        <record id="illness_chickenpox" model="illnesses">
+            <field name="name">Varicela</field>
+        </record>
+
+        <record id="illness_vomiting" model="illnesses">
+            <field name="name">Vómito</field>
+        </record>
+
+        <record id="illness_white_spots_mouth_lips" model="illnesses">
+            <field name="name">Manchas Blancas en Boca o Labios</field>
+        </record>
+
+        <record id="illness_others" model="illnesses">
+            <field name="name">Otros</field>
+        </record>
+
+        <record id="illness_tonsillitis" model="illnesses">
+            <field name="name">Amigdalitis</field>
+        </record>
+
+        <record id="illness_bulbovaginitis" model="illnesses">
+            <field name="name">Bulbovaginitis</field>
+        </record>
+
+        <record id="illness_dysentery" model="illnesses">
+            <field name="name">Disenteria</field>
+        </record>
+
+        <record id="illness_fever" model="illnesses">
+            <field name="name">Fiebre</field>
+        </record>
+
+        <record id="illness_herpes" model="illnesses">
+            <field name="name">Herpes</field>
+        </record>
+
+        <record id="illness_meningitis" model="illnesses">
+            <field name="name">Meningitis</field>
+        </record>
+
+        <record id="illness_parasitosis" model="illnesses">
+            <field name="name">Parasitosis</field>
+        </record>
+
+        <record id="illness_measles" model="illnesses">
+            <field name="name">Sarampión</field>
+        </record>
+
+        <record id="illness_atypical_sweat" model="illnesses">
+            <field name="name">Sudor Atípico</field>
+        </record>
+
+        <record id="illness_tuberculosis" model="illnesses">
+            <field name="name">Tuberculosis</field>
+        </record>
+
+        <record id="illness_esophageal_reflux" model="illnesses">
+            <field name="name">Reflujo Esofágico (Buche)</field>
+        </record>
+    </data>
+</odoo>

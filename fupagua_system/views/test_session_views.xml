@@ -47,7 +47,7 @@
             id="test_session_menu"
             name="Preguntas"
             action="test_session_action"
-            sequence="50"/>
+            sequence="70"/>
 
     </data>
 </odoo>

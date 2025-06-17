@@ -499,7 +499,7 @@
         </record>
 
     <!-- Menu -->
-        <menuitem name="Initial Questionnarie" id="initial_questionnarie_menu_item" sequence="90" action="initial_questionnarie_view_action"/>
+        <menuitem name="Initial Questionnarie" id="initial_questionnarie_menu_item" sequence="30" action="initial_questionnarie_view_action"/>
 
     </data>
 </odoo>

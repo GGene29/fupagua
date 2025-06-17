@@ -22,6 +22,7 @@
         "data/pregnancy_complication_views.xml",
         "data/habits_pregnancy_data_views.xml",
         "data/birth_complications_data_views.xml",
+        "data/illnesses_type_data_views.xml",
         # Views
         "views/area_specialization_view.xml",
         "views/res_partner_views.xml",

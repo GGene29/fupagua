@@ -26,7 +26,7 @@
             <field name="groups_id" eval="[(6,0, [ref('base.group_system') ] )]"/>
         </record> -->
 
-        <menuitem name="Questionnaire supplements" id="questionnaire_supplements_menu" sequence="30"/>
+        <menuitem name="Questionnaire supplements" id="questionnaire_supplements_menu" sequence="80"/>
 
         <menuitem name="Complication Pregnancy" id="complication_pregnancy_type_menu" action="complication_pregnancy_view_action" parent="questionnaire_supplements_menu" sequence="10"/>
 

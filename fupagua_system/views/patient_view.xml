@@ -49,7 +49,7 @@
         </record>
     
     <!-- Menu -->
-        <menuitem name="Patient" id="patient_menu_item" sequence="70" action="patient_view_action"/>
+        <menuitem name="Patient" id="patient_menu_item" sequence="50" action="patient_view_action"/>
 
     </data>
 </odoo>

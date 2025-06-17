@@ -20,6 +20,6 @@ class Sessions(models.Model):
         string='specialist',
     )
 
-    test_id = fields.Many2one('test.session' , string="Preguntas")
+    # test_id = fields.Many2one('test.session' , string="Preguntas")
     # TODO: Add many2one field about clinical history
     test_ids = fields.One2many('test.session', 'session_ids' , string="Preguntas")

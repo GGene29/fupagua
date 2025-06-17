@@ -55,7 +55,7 @@
         <menuitem
             id="sessions_fupagua_view_menu"
             name="Sessions"
-            sequence="10"
+            sequence="40"
             action="sessions_fupagua_view_action"
         />
     </data>

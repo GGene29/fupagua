@@ -3,7 +3,6 @@ from odoo import models,fields,api
 class TestSession(models.Model):
     _name = 'test.session'
     _description = 'Item de preguntas para las sesiones'
-    # _order = 'area_id, paso, secuencia'
 
     # Campos existentes
     consulta_id = fields.Many2one('patient', string='Consulta', ondelete='cascade')
@@ -14,14 +13,12 @@ class TestSession(models.Model):
     # observaciones = fields.Text(string='Notas adicionales')
     session_ids = fields.Many2one('sessions.fupagua', string='Sesion')
     
-    # Nuevo campo para el área/sección
     area_id = fields.Many2one(
         'area_specialization', 
         string='Área/Sección', 
         help="Área temática a la que pertenece esta pregunta"
     )
     
-    # Campo computado para estado de completitud
     completado = fields.Boolean(
         string='Completado',
         compute='_compute_completado',
