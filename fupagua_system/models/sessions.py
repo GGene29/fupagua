@@ -14,12 +14,6 @@ class Sessions(models.Model):
         string='Initial Questionnarie',
     )
 
-    patient_id = fields.Many2one(
-        'patient', 
-        string='Nombre del paciente', 
-        required=True
-    )
-
     specialist_id = fields.Many2one(
         'res.users',
         string='specialist',

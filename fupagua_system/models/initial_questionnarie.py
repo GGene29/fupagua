@@ -623,36 +623,36 @@ class Questionnarie(models.Model):
     performance_calculus = fields.Text(string='Calculus')
 
     performance_social_interaction = fields.Text(string='Social Interaction')
-# TRADUCCIÖN APARTIR DE 
-    subjects_problems = fields.Text(string='In which subjects do you have problems:')
+
+    subjects_problems = fields.Text(string='En qué materias presenta problemas:')
     
-    difficult_subject = fields.Text(string='If you have difficulty in any subject, mention from which grade onwards these became more noticeable:')
+    difficult_subject = fields.Text(string='De tener dificultad en alguna asignatura, mencione a partir de que grado éstas se hicieron más notorias:')
     
-    likes_subject = fields.Char(string='What are the subjects that you like the most:')
+    likes_subject = fields.Char(string='Cuáles son las materias que más le gusta:')
     
-    learning_home = fields.Text(string='How do you face the teaching-learning processes at home:')
+    learning_home = fields.Text(string='Cómo se enfrenta a los procesos de enseñanza-aprendizaje en casa:')
     
-    face_homework = fields.Text(string='How do you face homework and what strategies do you have to do them:')
+    face_homework = fields.Text(string='Cómo se enfrenta a las tareas y que estrategias tiene para realizarlas:')
     
-    time_homrework = fields.Text(string='At what time do you usually do homework and where:')
+    time_homrework = fields.Text(string='A qué horas acostumbra realizar las tareas y en donde:')
     
-    what_motivate = fields.Text(string='What motivates you:')
+    what_motivate = fields.Text(string='Qué lo motiva')
     
-    reaction_achievements = fields.Text(string='What is your reaction to achievements and failures (indicate Examples):')
+    reaction_achievements = fields.Text(string='Cuál es su reacción ante los logros y fracasos (señale ejemplos):')
     
-    excited_share = fields.Text(string='When you get excited about something or do something you know is right, do you show it to other people? (a)')
+    excited_share = fields.Text(string='¿Cuándo algo le emociona o realiza algo que sabe que está bien, lo muestra a otras personas? (a)')
     
-    part_recreational = fields.Text(string='Does your child take part in recreational or sports activities on his/her own initiative (which ones):')
+    part_recreational = fields.Text(string='Asiste a actividades recreativa o deportiva por iniciativa propia (cuales):')
     
-    activities_frequently = fields.Text(string='Does your child have any skills or do any activities frequently?')
+    activities_frequently = fields.Text(string='¿Tiene su hijo alguna habilidad o realiza alguna actividad con frecuencia?')
 
     # XI Comportamiento General
     
-    aggressive_family = fields.Text(string='Is he/she sometimes aggressive towards his/her caregivers or family members?')
+    aggressive_family = fields.Text(string='¿En ocasiones es agresivo con sus cuidadores o miembros de la familia?')
     
-    aggressive_outside_family = fields.Text(string='Is he/she aggressive towards people outside the family?')
+    aggressive_outside_family = fields.Text(string='¿Es agresivo con personas fuera de la familia?')
     
-    hurt_deliberately = fields.Text(string='Has he/she ever deliberately hurt himself/herself, for example by biting, hitting or pulling his/her hair?')
+    hurt_deliberately = fields.Text(string='¿Alguna vez se lastimó deliberadamente, por ejemplo morderse, golpearse o tirarse el cabello?')
     
-    other_comments_general = fields.Text(string='Any other comments:')
+    other_comments_general = fields.Text(string='Algún otro comentario:')
       
