@@ -7,11 +7,9 @@
             <field name="arch" type="xml">
                 <tree>
                     <field name="area_id" />
-                    <field name="consulta_id"/>
                     <field name="paso"/>
                     <field name="secuencia"/>
                     <field name="pregunta"/>
-                    <field name="respuesta"/>
                 </tree>
             </field>
         </record>
@@ -24,7 +22,6 @@
                     <sheet>
                         <group>
                             <field name="area_id" />
-                            <field name="consulta_id"/>
                             <field name="paso"/>
                             <field name="secuencia"/>
                             <field name="pregunta"/>

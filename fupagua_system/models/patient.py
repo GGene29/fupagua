@@ -29,6 +29,8 @@ class Patient(models.Model):
     )
     
     questionnarie = fields.One2many('initial_questionnarie', 'patient_id', string="Questionnarie")
+
+    session_id = fields.One2many('session_fupagua', 'patient_id', string='Sesiones del paciente')
     
     
     @api.depends('date_of_birth')

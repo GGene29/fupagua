@@ -4,13 +4,11 @@ class TestSession(models.Model):
     _name = 'test.session'
     _description = 'Item de preguntas para las sesiones'
 
-    # Campos existentes
-    consulta_id = fields.Many2one('patient', string='Consulta', ondelete='cascade')
+    # consulta_id = fields.Many2one('patient', string='Consulta', ondelete='cascade')
     paso = fields.Char(string='Paso')
     secuencia = fields.Char(string='Orden')
     pregunta = fields.Text(string='Pregunta')
     respuesta = fields.Boolean(string='Respuesta (Sí/No)')
-    # observaciones = fields.Text(string='Notas adicionales')
     session_ids = fields.Many2one('sessions.fupagua', string='Sesion')
     
     area_id = fields.Many2one(

@@ -623,7 +623,7 @@ class Questionnarie(models.Model):
     performance_calculus = fields.Text(string='Calculus')
 
     performance_social_interaction = fields.Text(string='Social Interaction')
-    
+# TRADUCCIÖN APARTIR DE 
     subjects_problems = fields.Text(string='In which subjects do you have problems:')
     
     difficult_subject = fields.Text(string='If you have difficulty in any subject, mention from which grade onwards these became more noticeable:')

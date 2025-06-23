@@ -37,6 +37,7 @@
                                 </tree>
                             
                             </field>
+                            <field name="observaciones" ></field>
 
                         </group>
                     </sheet>
