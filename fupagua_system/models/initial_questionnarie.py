@@ -476,7 +476,7 @@ class Questionnarie(models.Model):
     
     void_control = fields.Char(string='A qué edad controló los efínteres')
     
-    daytime_bladder = fields.Char(string='Vesicañ diurno')
+    daytime_bladder = fields.Char(string='Vesical diurno')
     
     daytime_rectal = fields.Char(string='Rectal diurno')
     
