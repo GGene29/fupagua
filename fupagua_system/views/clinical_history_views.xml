@@ -9,6 +9,7 @@
             <field name="model">clinical_history</field>
             <field name="arch" type="xml">
                 <tree>
+                    <field name="code_history"/>
                     <field name="patient_id"/>
                     <field name="questionnarie_id"/>
                     <field name="session_id"/>
@@ -24,6 +25,7 @@
                 <form>
                     <sheet>
                         <group>
+                            <field name="code_history"/>
                             <field name="patient_id"/>
                             <field name="questionnarie_id"/>
                             <field name="session_id"/>
@@ -42,7 +44,7 @@
         </record>
 
     <!-- Menu -->
-        <menuitem name="Historias Clinicas" id="clinical_history_menu_item" sequence="55" action="clinical_history_view_action" groups="base.group_system,fupagua_system.group_receptionist_fupagua"/>
+        <menuitem name="Historias Clinicas" id="clinical_history_menu_item" sequence="10" action="clinical_history_view_action" parent="patient_menu_item"/>
 
     </data>
 </odoo>
