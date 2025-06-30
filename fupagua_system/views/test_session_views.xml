@@ -26,7 +26,6 @@
                             <field name="secuencia"/>
                             <field name="pregunta"/>
                             <field name="respuesta"/>
-                            <field name="completado" />
                         </group>
                     </sheet>
                 </form>
@@ -36,7 +35,6 @@
         <record id="test_session_action" model="ir.actions.act_window">
             <field name="name">Preguntas</field>
             <field name="res_model">test.session</field>
-            <!-- <field name="view_type">form</field> -->
             <field name="view_mode">tree,form</field>
         </record>
 

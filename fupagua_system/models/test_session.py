@@ -17,13 +17,3 @@ class TestSession(models.Model):
         help="Área temática a la que pertenece esta pregunta"
     )
     
-    completado = fields.Boolean(
-        string='Completado',
-        compute='_compute_completado',
-        store=True
-    )
-        
-    @api.depends('respuesta')
-    def _compute_completado(self):
-        for item in self:
-            item.completado = bool(item.respuesta is not None)

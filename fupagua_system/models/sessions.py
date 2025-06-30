@@ -1,4 +1,4 @@
-from odoo import fields, models
+from odoo import fields, models, api , _
 
 class Sessions(models.Model):
     _name="sessions.fupagua"
@@ -19,7 +19,6 @@ class Sessions(models.Model):
         string='specialist',
     )
 
-    # TODO: Add many2one field about clinical history
     test_ids = fields.One2many('test.session', 'session_ids' , string="Preguntas")
     
     observaciones = fields.Text(string='Notas adicionales')
