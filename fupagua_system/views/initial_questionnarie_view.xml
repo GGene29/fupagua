@@ -450,12 +450,6 @@
                                         <field name="was_cause" />
                                         <field name="changes_school" />
                                         <field name="when_which" />
-                                        <field name="performance_writing" />
-                                        <field name="performance_reading" />
-                                        <field name="performance_calculus" />
-                                        <field name="performance_social_interaction" />
-                                        <field name="subjects_problems" />
-                                        <field name="difficult_subject" />
                                     </group>
                                     <group col="2">
                                         <field name="likes_subject" />
@@ -468,6 +462,17 @@
                                         <field name="part_recreational" />
                                         <field name="activities_frequently" />
                                     </group>
+                                    
+                                    
+                                </group>
+                                <p>Describa su rendiminto actual en:</p>
+                                <group col="1">
+                                    <field name="performance_writing" />
+                                    <field name="performance_reading" />
+                                    <field name="performance_calculus" />
+                                    <field name="performance_social_interaction" />
+                                    <field name="subjects_problems" />
+                                    <field name="difficult_subject" />
                                 </group>
                                 <h4> XI COMPORTAMIENTO GENERAL</h4>
                                 <group>
