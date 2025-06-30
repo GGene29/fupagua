@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <data>
+
+    <!-- View Tree -->
+        <record model="ir.ui.view" id="clinical_history_view">
+            <field name="name">clinical history</field>    
+            <field name="model">clinical_history</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="patient_id"/>
+                    <field name="questionnarie_id"/>
+                    <field name="session_id"/>
+                </tree>
+            </field>
+        </record>
+
+    <!-- View Form -->
+        <record model="ir.ui.view" id="clinical_history_form">
+            <field name="name">clinical history</field>    
+            <field name="model">clinical_history</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="patient_id"/>
+                            <field name="questionnarie_id"/>
+                            <field name="session_id"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        
+    <!-- Action Server View -->
+
+        <record id="clinical_history_view_action" model="ir.actions.act_window">
+            <field name="name">Historias Clinicas</field>
+            <field name="res_model">clinical_history</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+    <!-- Menu -->
+        <menuitem name="Historias Clinicas" id="clinical_history_menu_item" sequence="55" action="clinical_history_view_action" groups="base.group_system,fupagua_system.group_receptionist_fupagua"/>
+
+    </data>
+</odoo>

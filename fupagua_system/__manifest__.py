@@ -35,6 +35,7 @@
         "views/birth_complications_view.xml",
         "views/illnesses_types_view.xml",
         "views/test_session_views.xml",
+        "views/clinical_history_views.xml",
         "views/ir_menu_views.xml",
     ],
     'installable': True,

@@ -1,4 +1,4 @@
-from odoo import fields, models, api , _
+from odoo import fields, models
 
 class Sessions(models.Model):
     _name="sessions.fupagua"

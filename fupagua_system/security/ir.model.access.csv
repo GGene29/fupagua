@@ -9,3 +9,4 @@ access_habits_pregnancy,habits_pregnancy,model_habits_pregnancy,base.group_syste
 access_birth_complications,birth_complications,model_birth_complications,base.group_system,1,1,1,1
 access_illnesses,illnesses,model_illnesses,base.group_system,1,1,1,1
 access_test_session,test.session,model_test_session,base.group_system,1,1,1,1
+access_clinical_history,clinical_history,model_clinical_history,base.group_system,1,1,1,1

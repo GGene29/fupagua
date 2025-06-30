@@ -42,7 +42,8 @@
             id="test_session_menu"
             name="Preguntas"
             action="test_session_action"
-            sequence="70"/>
+            sequence="70"
+            groups="base.group_system,fupagua_system.group_receptionist_fupagua"/>
 
     </data>
 </odoo>

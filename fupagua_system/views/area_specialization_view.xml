@@ -40,7 +40,7 @@
     </record>
 
     <!-- Menu -->
-        <menuitem name="Area of Specialization" id="area_specialization_menu_item" sequence="60" action="area_specialization_view_action"/>
+        <menuitem name="Area of Specialization" id="area_specialization_menu_item" sequence="60" action="area_specialization_view_action" groups="base.group_system,fupagua_system.group_receptionist_fupagua"/>
 
     </data>
 </odoo>
