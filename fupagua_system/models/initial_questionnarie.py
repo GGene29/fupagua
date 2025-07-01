@@ -9,7 +9,7 @@ class Questionnarie(models.Model):
     _name= 'initial_questionnarie'
     _description = 'Cuestionario Inicial realizado al paciente'
     _rec_name = 'patient_id'
-    _inherits = {'patient' : 'patient_id' }
+    _inherits = {'patient' : 'patient_id'}
     
     patient_id = fields.Many2one('patient', string='Patient')
     
@@ -655,4 +655,15 @@ class Questionnarie(models.Model):
     hurt_deliberately = fields.Text(string='¿Alguna vez se lastimó deliberadamente, por ejemplo morderse, golpearse o tirarse el cabello?')
     
     other_comments_general = fields.Text(string='Algún otro comentario:')
-      
+
+    @api.model
+    def create(self, vals):
+        code_registro = super(Questionnarie, self).create(vals)
+
+        if code_registro.registration_code:    
+            self.env['clinical_history'].create({
+                'code_history': code_registro.registration_code,
+                'questionnarie_id': code_registro.id
+                })
+        return code_registro
+        

@@ -17,8 +17,9 @@ class ClinicalHistory(models.Model):
         string='Cuestionario del Paciente',
     )
 
-    session_id = fields.Many2one(
-        'sessions.fupagua',
-        string='Sessiones del Paciente',
+    session_ids = fields.One2many(
+        'sessions.fupagua', 'history_ids',
+        string='Sesiones del Paciente',
     )
+
     
